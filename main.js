@@ -1,4 +1,4 @@
-import './style.css'
+import './src/styles/style.scss'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 
