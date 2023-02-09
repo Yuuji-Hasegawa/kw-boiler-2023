@@ -1,17 +1,19 @@
-@use '../settings' as setting;
-@use '../tools' as tool;
+@use "../settings" as setting;
+@use "../tools" as tool;
 
 :root {
-  @each $key, $name in setting.$dark-colors {
+  @each $key, $name in setting.$light-colors {
     --c-#{$key}: #{($name)};
   }
-  --accent: #c82e2e;
-  @include tool.darkmode() {
-    --accent: #ff5a5a;
+
+  @include tool.darkmode {
+    @each $key, $name in setting.$dark-colors {
+      --c-#{$key}: #{($name)};
+    }
   }
 }
 
-*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+*:where(:not(iframe, canvas, img, svg, video, svg *)) {
   all: unset;
   display: revert;
 }
@@ -22,23 +24,31 @@
   box-sizing: border-box;
   overflow-wrap: break-word;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: initial;
-  -webkit-font-feature-settings: 'pkna';
+  min-height: 100vh;
   font-family: setting.$font-family;
   font-size: setting.fontsize(s);
+  font-feature-settings: initial;
+  font-feature-settings: "pkna";
   line-height: setting.lineheight(reset);
-  background-color: var(--c-bg);
   color: var(--c-txt);
+  background-color: var(--c-bg);
+  text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 p:not(:last-of-type) {
   margin-block-end: setting.spaces(m);
 }
@@ -63,8 +73,17 @@ a {
   text-decoration: none;
   cursor: pointer;
   transition: all setting.animes(duration) setting.animes(timing);
+
   &:hover,
   &:focus {
     opacity: setting.animes(opacity);
   }
+}
+
+svg {
+  box-sizing: content-box;
+  flex-shrink: 0;
+  width: auto;
+  height: 1em;
+  vertical-align: -0.125em;
 }

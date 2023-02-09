@@ -69,7 +69,6 @@
 - [PostCSS](https://github.com/postcss/postcss)を使用する
 - プラグインとして以下を使用する
   - [autoprefixer](https://github.com/postcss/autoprefixer)
-  - [postcss-sort-media-queries](https://github.com/solversgroup/postcss-sort-media-queries)
 
 #### リンター・フォーマッター
 
