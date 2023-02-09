@@ -33,11 +33,13 @@
 - `fix`  
   fix する。
 
-- `image`
+- `image`  
   `src/images`内の画像を`src/public/img`へ最適化、WebP 等を出力する。
+  `dev`より先の実行を想定
 
-- `icon`
+- `icon`  
   `src/public/icons/icon.png`をリサイズ。750px \* 750px から小さいものを生成
+  `dev`より先の実行を想定
 
 ## Git フック
 
