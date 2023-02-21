@@ -1,4 +1,16 @@
-.c-footer {
-  position: sticky;
-  top: 100vh;
+@use "../settings" as setting;
+@use "../tools" as tool;
+
+.c-footer-nav {
+  container: fn-container / inline-size;
+
+  &__item {
+    @container fn-container (max-width: 736px) {
+      width: calc((100% - setting.spaces(xs) * 2) / 2);
+    }
+
+    @container fn-container (max-width: 469px) {
+      width: 100%;
+    }
+  }
 }

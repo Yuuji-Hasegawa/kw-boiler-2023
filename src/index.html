@@ -7,21 +7,1185 @@
     <link rel="icon" href="public/favicon.ico" sizes="any" />
     <link rel="icon" href="public/img/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="public/icons/icon-180x180.png" />
+    <!--<link rel="preload" href="public/fonts/Futura PT_Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="public/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="public/fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="public/fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin />-->
     <link rel="stylesheet" href="styles/style.scss" />
   </head>
   <body>
+    <header class="o-container o-container:header">
+      <a href="#" class="c-logo c-logo:header u-pv-2xs">
+        <svg width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <style>
+            @media (prefers-color-scheme: dark) {
+              path:nth-of-type(2) {
+                fill: #ff5a5a;
+              }
+            }
+          </style>
+          <path
+            d="M19.193 1.768c-1.924.781-3.828 1.563-5.664 2.463A33.245 33.245 0 0 0 8.3 7.337a17.223 17.223 0 0 0-4.178 4.275 12.85 12.85 0 0 0-1.354 2.686 13.582 13.582 0 0 0-.602 2.216c-.048.254-.087.509-.126.766a10.066 10.066 0 0 1-.007-1.566c.037-.526.114-1.049.23-1.563.237-1.04.62-2.04 1.14-2.972a13.362 13.362 0 0 1 1.883-2.58c.361-.393.745-.762 1.141-1.117s.812-.685 1.236-1.002a24.434 24.434 0 0 1 5.525-3.014 30.714 30.714 0 0 1 6.004-1.698Z"
+            fill="#2C6C60"
+          />
+          <path
+            d="M4.481 15.982c-4.596 5.566 7.02 15.982 8.958 8.476 1.21-5.088-4.358-12.84-9.44-8.236"
+            fill="#C82E2E"
+          />
+          <path
+            d="M1.8 23.17c-.043.317-.103.629-.161.94l-.18.926a41.212 41.212 0 0 0-.322 1.831 10.78 10.78 0 0 0-.13 1.784c.005.274.04.548.102.815.03.12.069.236.119.349l.038.08.02.037.028.048a1.796 1.796 0 0 0 .631.63c.226.137.47.24.726.304a6.325 6.325 0 0 0 1.726.178 16.97 16.97 0 0 0 1.831-.144c.309-.038.619-.08.93-.127.31-.047.623-.095.94-.138a9.842 9.842 0 0 1-.858.423c-.294.128-.59.242-.892.352-.61.216-1.241.373-1.882.469a8.815 8.815 0 0 1-.493.054 6.087 6.087 0 0 1-.502.019 4.992 4.992 0 0 1-1.029-.1 3.538 3.538 0 0 1-1.025-.382A2.823 2.823 0 0 1 .4 30.506l-.034-.06-.036-.067a2.851 2.851 0 0 1-.24-.68 4.43 4.43 0 0 1-.087-1.054c.012-.334.047-.668.106-.998.055-.322.13-.645.214-.954.353-1.228.849-2.41 1.477-3.523Zm6.553-11.175c.248-.243.518-.462.806-.656.29-.194.596-.366.912-.515a8.793 8.793 0 0 1 1.998-.654 12.382 12.382 0 0 1 4.212-.087c.702.102 1.395.259 2.072.47.683.21 1.345.48 1.98.807.644.33 1.25.729 1.808 1.189a7.792 7.792 0 0 1 1.483 1.627c.206.31.386.639.537.98a5.81 5.81 0 0 1 .422 3.307 7.24 7.24 0 0 1-.685 2.088 9.157 9.157 0 0 1-.54.938c-.198.298-.41.587-.637.864a12.835 12.835 0 0 1-3.188 2.755 12.49 12.49 0 0 1-1.864.946c-.323.13-.651.242-.983.345-.332.097-.67.174-1.01.231a13.07 13.07 0 0 0 3.563-1.954 13.78 13.78 0 0 0 2.822-2.835 10.012 10.012 0 0 0 .991-1.692 6.625 6.625 0 0 0 .534-1.832 5.017 5.017 0 0 0-.39-2.732 5.528 5.528 0 0 0-.456-.822 6.846 6.846 0 0 0-1.274-1.415 9.552 9.552 0 0 0-1.605-1.103 13.664 13.664 0 0 0-7.708-1.567c-.67.068-1.33.206-1.97.412a7.138 7.138 0 0 0-.94.381c-.31.15-.608.326-.89.524Zm6.54 17.789a1.37 1.37 0 0 1-.283-.061 1.73 1.73 0 0 1-.262-.107c-.087-.138-.174-.275-.248-.417a8.28 8.28 0 0 1-.384-.852c-.112-.283-.216-.56-.334-.817a3.689 3.689 0 0 0-.191-.366c.005-.08.008-.161.01-.252v-.275a1.254 1.254 0 0 1 .28.074c.09.034.177.075.26.123.083.14.158.283.225.43.131.287.238.573.347.847.103.269.22.532.353.787.063.123.136.24.217.352l.005.255.005.28Zm-3.146-1.697c.04.012.075.027.112.04l.101.04a2.6 2.6 0 0 1 .19.08c.028.09.07.175.109.263.08.174.167.349.255.527.088.178.179.36.264.546.043.094.085.189.124.286a1.878 1.878 0 0 1-.19.403c-.154-.053-.276-.108-.404-.161a7.38 7.38 0 0 0-.114-.262c-.08-.174-.167-.35-.256-.527-.089-.177-.18-.36-.264-.547-.045-.093-.081-.19-.127-.285.022-.069.05-.135.08-.2l.051-.1c.026-.036.044-.068.069-.103Zm8.788-26.811C21.745-.418 24.163-.66 23.92 2a3.337 3.337 0 0 1-3.87-.967"
+            fill="#2C6C60"
+          />
+        </svg>
+      </a>
+      <nav id="header-nav" class="c-header-nav-wrapper" tabindex="">
+        <ul class="c-header-nav">
+          <li class="c-header-nav__item"><a href="#" class="u-db u-txt-bold u-pv-xs u-ph-s">トップ</a></li>
+          <li class="c-header-nav__item"><a href="#" class="u-db u-txt-bold u-pv-xs u-ph-s">会社情報</a></li>
+          <li class="c-header-nav__item"><a href="#" class="u-db u-txt-bold u-pv-xs u-ph-s">ブログ</a></li>
+          <li class="c-header-nav__item"><a href="#" class="u-db u-txt-bold u-pv-xs u-ph-s">お知らせ</a></li>
+          <li class="c-header-nav__item"><a href="#" class="u-db u-txt-bold u-pv-xs u-ph-s">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <button class="c-menu-btn" type="button" aria-label="menu open" aria-controls="header-nav" aria-expanded="false">
+        <span class="c-menu-btn__inner"></span>
+      </button>
+    </header>
+    <nav class="o-container o-container:breadcrumb u-bg-overlay" aria-label="Breadcrumb">
+      <ol class="o-reel u-pt-2xs u-gap-xs">
+        <li class="c-breadcrumb-item">
+          <a class="c-breadcrumb-link u-display-ib u-txt-dimmed u-txt-bold u-txt-s u-pd-xs" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+              <path
+                d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        <li class="c-breadcrumb-item">
+          <a class="c-breadcrumb-link u-display-ib u-txt-dimmed u-txt-bold u-txt-s u-pd-xs" href="#" aria-current="page"
+            >ブログ</a
+          >
+        </li>
+      </ol>
+    </nav>
     <main>
-      <h1>テスト</h1>
-      <p>hogehoge</p>
-      <p>piyopiyo</p>
-      <a href="#">Link</a>
       <script type="module" src="scripts/main.mjs"></script>
       <picture class="o-frame">
         <source type="image/avif" srcset="public/img/thumb.avif" />
         <source type="image/webp" srcset="public/img/thumb.webp" />
         <img src="public/img/hero.png" loading="lazy" decoding="async" alt="" width="100%" height="100%" />
       </picture>
+      <div class="u-pt-l u-pb-l">
+        <div class="o-container">
+          <h2 class="c-heading u-mb-l u-txt-bold u-txt-center u-txt-en">Information</h2>
+          <div class="u-inner-wrap u-block-center">
+            <ul class="o-stack o-stack:m u-mb-m">
+              <li class="o-switcher o-switcher:gap-xs u-txt-en u-txt-bold">
+                <time datetime="2022-00-00">2022.00.00</time>
+                <a class="o-switcher__detail u-txt-brand" href="#">お知らせ 9</a>
+              </li>
+              <li class="o-switcher o-switcher:gap-xs u-txt-en u-txt-bold">
+                <time datetime="2022-00-00">2022.00.00</time>
+                <a class="o-switcher__detail u-txt-brand" href="#">お知らせ 8</a>
+              </li>
+              <li class="o-switcher o-switcher:gap-xs u-txt-en u-txt-bold">
+                <time datetime="2022-00-00">2022.00.00</time>
+                <a class="o-switcher__detail u-txt-brand" href="#">お知らせ 7</a>
+              </li>
+              <li class="o-switcher o-switcher:gap-xs u-txt-en u-txt-bold">
+                <time datetime="2022-00-00">2022.00.00</time>
+                <a class="o-switcher__detail u-txt-brand" href="#">お知らせ 6</a>
+              </li>
+              <li class="o-switcher o-switcher:gap-xs u-txt-en u-txt-bold">
+                <time datetime="2022-00-00">2022.00.00</time>
+                <a class="o-switcher__detail u-txt-brand" href="#">お知らせ 5</a>
+              </li>
+            </ul>
+            <a class="u-dt u-block-right u-txt-bold u-txt-brand" href="#">
+              <span class="o-has-icon o-has-icon:center o-has-icon:gap-xs">
+                <span>全てのお知らせ</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                  <path
+                    d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="u-pt-l u-pb-l">
+        <div class="o-container u-wrapper u-block-center">
+          <h2 class="c-heading u-mb-l u-txt-bold u-txt-center u-txt-en">Topics</h2>
+          <p class="u-mb-m">00件中 / 00件 ~ 00件目を表示</p>
+          <ul class="o-switcher o-switcher:gap-base u-mb-m">
+            <li class="o-switcher__full-half-quart u-flex-shrink-none o-stack o-stack:s">
+              <a href="#">
+                <picture class="o-frame">
+                  <source type="image/avif" srcset="public/img/thumb.avif" />
+                  <source type="image/webp" srcset="public/img/thumb.webp" />
+                  <img src="public/img/thumb.png" loading="lazy" decoding="async" alt="" width="100%" height="100%" />
+                </picture>
+              </a>
+              <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                <a class="u-db" href="#">Hello world!</a>
+              </h3>
+              <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                <a href="#" class="u-txt-medium">未分類</a>
+                <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+              </footer>
+            </li>
+            <li class="o-switcher__full-half-quart o-stack o-stack:s">
+              <a href="#">
+                <picture class="o-frame">
+                  <source type="image/avif" srcset="public/img/thumb.avif" />
+                  <source type="image/webp" srcset="public/img/thumb.webp" />
+                  <img src="public/img/thumb.png" loading="lazy" decoding="async" alt="" width="100%" height="100%" />
+                </picture>
+              </a>
+              <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                <a class="u-db" href="#">Hello world!</a>
+              </h3>
+              <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                <a href="#" class="u-txt-medium">未分類</a>
+                <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+              </footer>
+            </li>
+            <li class="o-switcher__full-half-quart o-stack o-stack:s">
+              <a href="#">
+                <picture class="o-frame">
+                  <source type="image/avif" srcset="public/img/thumb.avif" />
+                  <source type="image/webp" srcset="public/img/thumb.webp" />
+                  <img src="public/img/thumb.png" loading="lazy" decoding="async" alt="" width="100%" height="100%" />
+                </picture>
+              </a>
+              <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                <a class="u-db" href="#">Hello world!</a>
+              </h3>
+              <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                <a href="#" class="u-txt-medium">未分類</a>
+                <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+              </footer>
+            </li>
+            <li class="o-switcher__full-half-quart o-stack o-stack:s">
+              <a href="#">
+                <picture class="o-frame">
+                  <source type="image/avif" srcset="public/img/thumb.avif" />
+                  <source type="image/webp" srcset="public/img/thumb.webp" />
+                  <img src="public/img/thumb.png" loading="lazy" decoding="async" alt="" width="100%" height="100%" />
+                </picture>
+              </a>
+              <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                <a class="u-db" href="#">Hello world!</a>
+              </h3>
+              <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                <a href="#" class="u-txt-medium">未分類</a>
+                <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+              </footer>
+            </li>
+          </ul>
+          <a href="#" class="c-btn u-block-center">
+            <span class="o-has-icon o-has-icon:center o-has-icon:gap-3xs">
+              <span>コンテンツ一覧</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                <path
+                  d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+          </a>
+          <nav class="u-mt-m" aria-label="Pagination">
+            <ol class="o-grid o-grid:pagination u-gap-xs u-flex-center">
+              <li>
+                <a href="#" class="c-btn c-btn:pager" aria-label="Previous">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                    <path
+                      d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="c-btn c-btn:pager" aria-label="Goto Page 1" href="#"> 1 </a>
+              </li>
+              <li>
+                <a href="#" class="c-btn c-btn:pager" aria-label="Goto Page 1" href="#"> 2 </a>
+              </li>
+              <li>
+                <a href="#" class="c-btn c-btn:pager" aria-label="Current Page" aria-current="true" href="#"> 3 </a>
+              </li>
+              <li>
+                <a href="#" class="c-btn c-btn:pager" aria-label="Goto Page 1" href="#"> 4 </a>
+              </li>
+              <li>
+                <a href="#" class="c-btn c-btn:pager" aria-label="Goto Page 1" href="#"> 5 </a>
+              </li>
+              <li>
+                <a href="#" class="c-btn c-btn:pager" aria-label="Next">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                    <path
+                      d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="u-pt-l u-pb-l">
+        <div class="o-container">
+          <div class="u-inner-wrap u-block-center">
+            <h1 class="c-heading u-mb-l u-txt-bold u-txt-center u-txt-en">Not Found</h1>
+            <p class="c-heading c-heading:min u-txt-bold u-mb-m">見つかりませんでした。</p>
+            <p>
+              お探しのページは見つかりませんでした。
+              <br />
+              お探しのページ (URL: #)は、
+            </p>
+            <ul class="c-disc-list u-mb-m">
+              <li>すでに削除されている</li>
+              <li>公開期間が終わっている</li>
+              <li>アクセスしたアドレスが異なっている</li>
+            </ul>
+            <p>などの理由で見つかりませんでした。</p>
+            <p>
+              引き続き、このサイトをご利用いただく場合は、<a class="c-link u-txt-break u-txt-bold" href="#"
+                >トップページ</a
+              >からお探しください。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="u-pt-l u-pb-l">
+        <div class="o-container">
+          <div class="u-inner-wrap u-block-center">
+            <h1 class="c-heading u-mb-l u-txt-bold u-txt-center">会社情報</h1>
+            <dl class="c-table u-mb-m">
+              <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">社名</dt>
+              <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">xx株式会社</dd>
+              <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">所在地</dt>
+              <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                〒000-0000<br />大阪市北区xx町x-xx-xx&ensp;xxビル nF
+              </dd>
+              <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">電話番号</dt>
+              <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                <a href="tel:00-0000-0000" target="_blank" rel="noopener">00-0000-0000</a>
+              </dd>
+              <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">
+                メールアドレス
+              </dt>
+              <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                <a href="mailto:info@examples.com" target="_blank" rel="noopener">info@examples.com</a>
+              </dd>
+              <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">代表者</dt>
+              <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">代表取締役&ensp;xx</dd>
+              <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">事業内容</dt>
+              <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                <ul class="c-disc-list">
+                  <li>xx</li>
+                  <li>xx</li>
+                  <li>xx</li>
+                  <li>xx</li>
+                </ul>
+              </dd>
+            </dl>
+            <h2 class="c-heading c-heading:min u-mb-m u-txt-bold u-txt-center">アクセス</h2>
+            <div class="o-frame o-frame:gray-filter u-mb-m">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.992643865924!2d135.49217391523234!3d34.70536548043322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68e55df1f63%3A0xd58f533a3a832867!2z44CSNTMwLTAwMTEg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65aSn5rex55S677yT4oiS77yR!5e0!3m2!1sja!2sjp!4v1656471426814!5m2!1sja!2sjp"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                width="100%"
+                height="100%"
+              ></iframe>
+            </div>
+            <ul class="c-disc-list">
+              <li>xx線「xx駅（xx番出口）」より徒歩x分</li>
+              <li>xx線「xx駅」より徒歩x分</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="u-pt-l u-pb-l">
+        <div class="o-container">
+          <div class="u-inner-wrap u-block-center">
+            <h1 class="c-heading u-mb-l u-txt-bold u-txt-center u-txt-en">利用規約</h1>
+            <p>
+              本利用規約（以下「本規約」と言います。）には、本サービスの利用条件及び当社と登録ユーザーの皆様との間の権利義務関係が定められています。本サービスの利用に際しては、本規約の全文をお読みいただいたうえで、本規約に同意いただく必要があります。
+            </p>
+            <dl>
+              <dt class="u-txt-bold u-txt-m">第1条（適用）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    本規約は、本サービスの利用条件及び本サービスの利用に関する当社と登録ユーザーとの間の権利義務関係を定めることを目的とし、登録ユーザーと当社との間の本サービスの利用に関わる一切の関係に適用されます。
+                  </li>
+                  <li class="c-count-list__item">
+                    当社が当社ウェブサイト上で掲載する本サービス利用に関するルール(
+                    <a class="c-link u-txt-break" href="#"> https://kamenwriter.com/privacy-policy/ </a>
+                    )は、本規約の一部を構成するものとします。
+                  </li>
+                  <li class="c-count-list__item">
+                    本規約の内容と、前項のルールその他の本規約外における本サービスの説明等とが異なる場合は、本規約の規定が優先して適用されるものとします。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第2条（定義）</dt>
+              <dd class="u-mt-base u-mb-base">
+                本規約において使用する以下の用語は、各々以下に定める意味を有するものとします。
+                <ol class="c-count-list c-count-list:sub-sec">
+                  <li class="c-count-list__item">
+                    「サービス利用契約」とは、本規約を契約条件として当社と登録ユーザーの間で締結される、本サービスの利用契約を意味します。
+                  </li>
+                  <li class="c-count-list__item">
+                    「知的財産権」とは、著作権、特許権、実用新案権、意匠権、商標権その他の知的財産権（それらの権利を取得し、またはそれらの権利につき登録等を出願する権利を含みます。）を意味します。
+                  </li>
+                  <li class="c-count-list__item">
+                    「投稿データ」とは、登録ユーザーが本サービスを利用して投稿その他送信するコンテンツ（文章、画像、動画その他のデータを含みますがこれらに限りません。）を意味します。
+                  </li>
+                  <li class="c-count-list__item">「当社」とは、仮面ライターを意味します。</li>
+                  <li class="c-count-list__item">
+                    「当社ウェブサイト」とは、そのドメインが「kamenwriter.com」である、当社が運営するウェブサイト（理由の如何を問わず、当社のウェブサイトのドメインまたは内容が変更された場合は、当該変更後のウェブサイトを含みます。）を意味します。
+                  </li>
+                  <li class="c-count-list__item">
+                    「登録ユーザー」とは、第3条（登録）に基づいて本サービスの利用者としての登録がなされた個人または法人を意味します。
+                  </li>
+                  <li class="c-count-list__item">
+                    「本サービス」とは、当社が提供する仮面ライターという名称のサービス（理由の如何を問わずサービスの名称または内容が変更された場合は、当該変更後のサービスを含みます。）を意味します。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第3条（登録）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    本サービスの利用を希望する者（以下「登録希望者」といいます。）は、本規約を遵守することに同意し、かつ当社の定める一定の情報（以下「登録事項」といいます。）を当社の定める方法で当社に提供することにより、当社に対し、本サービスの利用の登録を申請することができます。
+                  </li>
+                  <li class="c-count-list__item">
+                    当社は、当社の基準に従って、第１項に基づいて登録申請を行った登録希望者（以下「登録申請者」といいます。）の登録の可否を判断し、当社が登録を認める場合にはその旨を登録申請者に通知します。登録申請者の登録ユーザーとしての登録は、当社が本項の通知を行ったことをもって完了したものとします。
+                  </li>
+                  <li class="c-count-list__item">
+                    前項に定める登録の完了時に、サービス利用契約が登録ユーザーと当社の間に成立し、登録ユーザーは本サービスを本規約に従い利用することができるようになります。
+                  </li>
+                  <li class="c-count-list__item">
+                    当社は、登録申請者が、以下の各号のいずれかの事由に該当する場合は、登録及び再登録を拒否することがあり、またその理由について一切開示義務を負いません。
+                    <ol class="c-count-list c-count-list:sub-sec">
+                      <li class="c-count-list__item">
+                        当社に提供した登録事項の全部または一部につき虚偽、誤記または記載漏れがあった場合
+                      </li>
+                      <li class="c-count-list__item">
+                        未成年者、成年被後見人、被保佐人または被補助人のいずれかであり、法定代理人、後見人、保佐人または補助人の同意等を得ていなかった場合
+                      </li>
+                      <li class="c-count-list__item">
+                        反社会的勢力等（暴力団、暴力団員、右翼団体、反社会的勢力、その他これに準ずる者を意味します。以下同じ。）である、または資金提供その他を通じて反社会的勢力等の維持、運営もしくは経営に協力もしくは関与する等反社会的勢力等との何らかの交流もしくは関与を行っていると当社が判断した場合
+                      </li>
+                      <li class="c-count-list__item">
+                        過去当社との契約に違反した者またはその関係者であると当社が判断した場合
+                      </li>
+                      <li class="c-count-list__item">第10条に定める措置を受けたことがある場合</li>
+                      <li class="c-count-list__item">その他、登録を適当でないと当社が判断した場合</li>
+                    </ol>
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第4条（登録事項の変更）</dt>
+              <dd class="u-mt-base u-mb-base">
+                登録ユーザーは、登録事項に変更があった場合、当社の定める方法により当該変更事項を遅滞なく当社に通知するものとします。
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第5条（パスワード及びユーザーIDの管理）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    登録ユーザーは、自己の責任において、本サービスに関するパスワード及びユーザーIDを適切に管理及び保管するものとし、これを第三者に利用させ、または貸与、譲渡、名義変更、売買等をしてはならないものとします。
+                  </li>
+                  <li class="c-count-list__item">
+                    パスワードまたはユーザーIDの管理不十分、使用上の過誤、第三者の使用等によって生じた損害に関する責任は登録ユーザーが負うものとします。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第6条（料金及び支払方法）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    登録ユーザーは、本サービス利用の対価として、別途当社が定め、当社ウェブサイトに表示する利用料金を、当社が指定する支払方法により当社に支払うものとします。
+                  </li>
+                  <li class="c-count-list__item">
+                    登録ユーザーが利用料金の支払を遅滞した場合、登録ユーザーは年14.6％の割合による遅延損害金を当社に支払うものとします。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第7条（禁止事項）</dt>
+              <dd class="u-mt-base u-mb-base">
+                登録ユーザーは、本サービスの利用にあたり、以下の各号のいずれかに該当する行為または該当すると当社が判断する行為をしてはなりません。
+                <ol class="c-count-list c-count-list:sub-sec">
+                  <li class="c-count-list__item">法令に違反する行為または犯罪行為に関連する行為</li>
+                  <li class="c-count-list__item">
+                    当社、本サービスの他の利用者またはその他の第三者に対する詐欺または脅迫行為
+                  </li>
+                  <li class="c-count-list__item">公序良俗に反する行為</li>
+                  <li class="c-count-list__item">
+                    当社、本サービスの他の利用者またはその他の第三者の知的財産権、肖像権、プライバシーの権利、名誉、その他の権利または利益を侵害する行為
+                  </li>
+                  <li class="c-count-list__item">
+                    本サービスを通じ、以下に該当し、または該当すると当社が判断する情報を当社または本サービスの他の利用者に送信すること
+                    <ul class="c-disc-list">
+                      <li>過度に暴力的または残虐な表現を含む情報</li>
+                      <li>コンピューター・ウィルスその他の有害なコンピューター・プログラムを含む情報</li>
+                      <li>当社、本サービスの他の利用者またはその他の第三者の名誉または信用を毀損する表現を含む情報</li>
+                      <li>過度にわいせつな表現を含む情報</li>
+                      <li>差別を助長する表現を含む情報</li>
+                      <li>自殺、自傷行為を助長する表現を含む情報</li>
+                      <li>薬物の不適切な利用を助長する表現を含む情報</li>
+                      <li>反社会的な表現を含む情報</li>
+                      <li>チェーンメール等の第三者への情報の拡散を求める情報</li>
+                      <li>他人に不快感を与える表現を含む情報</li>
+                    </ul>
+                  </li>
+                  <li class="c-count-list__item">本サービスのネットワークまたはシステム等に過度な負荷をかける行為</li>
+                  <li class="c-count-list__item">
+                    当社が提供するソフトウェアその他のシステムに対するリバースエンジニアリングその他の解析行為
+                  </li>
+                  <li class="c-count-list__item">本サービスの運営を妨害するおそれのある行為</li>
+                  <li class="c-count-list__item">当社のネットワークまたはシステム等への不正アクセス</li>
+                  <li class="c-count-list__item">第三者に成りすます行為</li>
+                  <li class="c-count-list__item">本サービスの他の利用者のIDまたはパスワードを利用する行為</li>
+                  <li class="c-count-list__item">
+                    当社が事前に許諾しない本サービス上での宣伝、広告、勧誘、または営業行為
+                  </li>
+                  <li class="c-count-list__item">本サービスの他の利用者の情報の収集</li>
+                  <li class="c-count-list__item">
+                    当社、本サービスの他の利用者またはその他の第三者に不利益、損害、不快感を与える行為
+                  </li>
+                  <li class="c-count-list__item">
+                    当社ウェブサイト上で掲載する本サービス利用に関するルール(
+                    <a class="c-link u-txt-break" href="#"> https://kamenwriter.com/terms/ </a>
+                    )に抵触する行為
+                  </li>
+                  <li class="c-count-list__item">反社会的勢力等への利益供与</li>
+                  <li class="c-count-list__item">面識のない異性との出会いを目的とした行為</li>
+                  <li class="c-count-list__item">前各号の行為を直接または間接に惹起し、または容易にする行為</li>
+                  <li class="c-count-list__item">前各号の行為を試みること</li>
+                  <li class="c-count-list__item">その他、当社が不適切と判断する行為</li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第8条（本サービスの停止等）</dt>
+              <dd class="u-mt-base u-mb-base">
+                当社は、以下のいずれかに該当する場合には、登録ユーザーに事前に通知することなく、本サービスの全部または一部の提供を停止または中断することができるものとします。
+                <ol class="c-count-list c-count-list:sub-sec">
+                  <li class="c-count-list__item">
+                    本サービスに係るコンピューター・システムの点検または保守作業を緊急に行う場合
+                  </li>
+                  <li class="c-count-list__item">
+                    コンピューター、通信回線等の障害、誤操作、過度なアクセスの集中、不正アクセス、ハッキング等により本サービスの運営ができなくなった場合
+                  </li>
+                  <li class="c-count-list__item">
+                    地震、落雷、火災、風水害、停電、天災地変などの不可抗力により本サービスの運営ができなくなった場合
+                  </li>
+                  <li class="c-count-list__item">その他、当社が停止または中断を必要と判断した場合</li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第9条（権利帰属）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    当社ウェブサイト及び本サービスに関する知的財産権は全て当社または当社にライセンスを許諾している者に帰属しており、本規約に基づく本サービスの利用許諾は、当社ウェブサイトまたは本サービスに関する当社または当社にライセンスを許諾している者の知的財産権の使用許諾を意味するものではありません。
+                  </li>
+                  <li class="c-count-list__item">
+                    登録ユーザーは、投稿データについて、自らが投稿その他送信することについての適法な権利を有していること、及び投稿データが第三者の権利を侵害していないことについて、当社に対し表明し、保証するものとします。
+                  </li>
+                  <li class="c-count-list__item">
+                    登録ユーザーは、投稿データについて、当社に対し、世界的、非独占的、無償、サブライセンス可能かつ譲渡可能な使用、複製、配布、派生著作物の作成、表示及び実行に関するライセンスを付与します。また、他の登録ユーザーに対しても、本サービスを利用して登録ユーザーが投稿その他送信した投稿データの使用、複製、配布、派生著作物を作成、表示及び実行することについての非独占的なライセンスを付与します。
+                  </li>
+                  <li class="c-count-list__item">
+                    登録ユーザーは、当社及び当社から権利を承継しまたは許諾された者に対して著作者人格権を行使しないことに同意するものとします。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第10条（登録抹消等）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    当社は、登録ユーザーが、以下の各号のいずれかの事由に該当する場合は、事前に通知または催告することなく、投稿データを削除もしくは非表示にし、当該登録ユーザーについて本サービスの利用を一時的に停止し、または登録ユーザーとしての登録を抹消することができます。
+                    <ol class="c-count-list c-count-list:sub-sec">
+                      <li class="c-count-list__item">本規約のいずれかの条項に違反した場合</li>
+                      <li class="c-count-list__item">登録事項に虚偽の事実があることが判明した場合</li>
+                      <li class="c-count-list__item">
+                        支払停止もしくは支払不能となり、または破産手続開始、民事再生手続開始、会社更生手続開始、特別清算開始若しくはこれらに類する手続の開始の申立てがあった場合
+                      </li>
+                      <li class="c-count-list__item">120日間本サービスの利用がない場合</li>
+                      <li class="c-count-list__item">
+                        当社からの問い合わせその他の回答を求める連絡に対して60日間応答がない場合
+                      </li>
+                      <li class="c-count-list__item">第3条第4項各号に該当する場合</li>
+                      <li class="c-count-list__item">
+                        その他、当社が本サービスの利用または登録ユーザーとしての登録の継続を適当でないと判断した場合
+                      </li>
+                    </ol>
+                  </li>
+                  <li class="c-count-list__item">
+                    前項各号のいずれかの事由に該当した場合、登録ユーザーは、当社に対して負っている債務の一切について当然に期限の利益を失い、直ちに当社に対して全ての債務の支払を行わなければなりません。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第11条（退会）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    登録ユーザーは、当社所定の手続の完了により、本サービスから退会し、自己の登録ユーザーとしての登録を抹消することができます。
+                  </li>
+                  <li class="c-count-list__item">
+                    退会にあたり、当社に対して負っている債務が有る場合は、登録ユーザーは、当社に対して負っている債務の一切について当然に期限の利益を失い、直ちに当社に対して全ての債務の支払を行わなければなりません。
+                  </li>
+                  <li class="c-count-list__item">
+                    退会後の利用者情報の取扱いについては、第15条の規定に従うものとします。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第12条（本サービスの内容の変更、終了）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    当社は、当社の都合により、本サービスの内容を変更し、または提供を終了することができます。
+                  </li>
+                  <li class="c-count-list__item">
+                    当社が本サービスの提供を終了する場合、当社は登録ユーザーに事前に通知するものとします。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第13条（保証の否認及び免責）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    当社は、本サービスが登録ユーザーの特定の目的に適合すること、期待する機能・商品的価値・正確性・有用性を有すること、登録ユーザーによる本サービスの利用が登録ユーザーに適用のある法令または業界団体の内部規則等に適合すること、継続的に利用できること、及び不具合が生じないことについて、明示又は黙示を問わず何ら保証するものではありません。
+                  </li>
+                  <li class="c-count-list__item">
+                    当社は、本サービスに関して登録ユーザーが被った損害につき、過去6ヶ月間に登録ユーザーが当社に支払った対価の金額を超えて賠償する責任を負わないものとし、また、付随的損害、間接損害、特別損害、将来の損害及び逸失利益にかかる損害については、賠償する責任を負わないものとします。
+                  </li>
+                  <li class="c-count-list__item">
+                    本サービスまたは当社ウェブサイトに関連して登録ユーザーと他の登録ユーザーまたは第三者との間において生じた取引、連絡、紛争等については、登録ユーザーが自己の責任によって解決するものとします。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第14条（秘密保持）</dt>
+              <dd class="u-mt-base u-mb-base">
+                登録ユーザーは、本サービスに関連して当社が登録ユーザーに対して秘密に取扱うことを求めて開示した非公知の情報について、当社の事前の書面による承諾がある場合を除き、秘密に取扱うものとします。
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第15条（利用者情報の取扱い）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    当社による登録ユーザーの利用者情報の取扱いについては、別途当社プライバシーポリシー(
+                    <a class="c-link u-txt-break" href="#" target="_blank" rel="noopener">
+                      https://kamenwriter.com/privacy-policy
+                    </a>
+                    )の定めによるものとし、登録ユーザーはこのプライバシーポリシーに従って当社が登録ユーザーの利用者情報を取扱うことについて同意するものとします。
+                  </li>
+                  <li class="c-count-list__item">
+                    当社は、登録ユーザーが当社に提供した情報、データ等を、個人を特定できない形での統計的な情報として、当社の裁量で、利用及び公開することができるものとし、登録ユーザーはこれに異議を唱えないものとします。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第16条（本規約等の変更）</dt>
+              <dd class="u-mt-base u-mb-base">
+                当社は、当社が必要と認めた場合は、本規約を変更できるものとします。本規約を変更する場合、変更後の本規約の施行時期及び内容を当社ウェブサイト上での掲示その他の適切な方法により周知し、または登録ユーザーに通知します。但し、法令上登録ユーザーの同意が必要となるような内容の変更の場合は、当社所定の方法で登録ユーザーの同意を得るものとします。
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第17条（連絡／通知）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    本サービスに関する問い合わせその他登録ユーザーから当社に対する連絡または通知、及び本規約の変更に関する通知その他当社から登録ユーザーに対する連絡または通知は、当社の定める方法で行うものとします。
+                  </li>
+                  <li class="c-count-list__item">
+                    当社が登録事項に含まれるメールアドレスその他の連絡先に連絡または通知を行った場合、登録ユーザーは当該連絡または通知を受領したものとみなします。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第18条（サービス利用契約上の地位の譲渡等）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    登録ユーザーは、当社の書面による事前の承諾なく、利用契約上の地位または本規約に基づく権利もしくは義務につき、第三者に対し、譲渡、移転、担保設定、その他の処分をすることはできません。
+                  </li>
+                  <li class="c-count-list__item">
+                    当社は本サービスにかかる事業を他社に譲渡した場合には、当該事業譲渡に伴い利用契約上の地位、本規約に基づく権利及び義務並びに登録ユーザーの登録事項その他の顧客情報を当該事業譲渡の譲受人に譲渡することができるものとし、登録ユーザーは、かかる譲渡につき本項において予め同意したものとします。なお、本項に定める事業譲渡には、通常の事業譲渡のみならず、会社分割その他事業が移転するあらゆる場合を含むものとします。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第19条（分離可能性）</dt>
+              <dd class="u-mt-base u-mb-base">
+                本規約のいずれかの条項またはその一部が、消費者契約法その他の法令等により無効または執行不能と判断された場合であっても、本規約の残りの規定及び一部が無効または執行不能と判断された規定の残りの部分は、継続して完全に効力を有するものとします。
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第20条（準拠法及び管轄裁判所）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">本規約及びサービス利用契約の準拠法は日本法とします。</li>
+                  <li class="c-count-list__item">
+                    本規約またはサービス利用契約に起因し、または関連する一切の紛争については、大阪地方裁判所を第一審の専属的合意管轄裁判所とします。
+                  </li>
+                </ol>
+              </dd>
+            </dl>
+            <p class="u-txt-right u-txt-s">【2022年xx月xx日 制定】<br /></p>
+          </div>
+        </div>
+      </div>
+      <div class="u-pt-l u-pb-l">
+        <div class="o-container">
+          <div class="u-inner-wrap u-block-center">
+            <h1 class="c-heading u-mb-l u-txt-bold u-txt-center u-txt-en">プライバシーポリシー</h1>
+            <p>
+              仮面ライター（以下「当社」といいます。）は、当社の提供するサービス（以下「本サービス」といいます。）における、ユーザーについての個人情報を含む利用者情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます。）を定めます。
+            </p>
+            <dl>
+              <dt class="u-txt-bold u-txt-m">第1条（収集する利用者情報及び収集方法）</dt>
+              <dd class="u-mt-base u-mb-base">
+                本ポリシーにおいて、「利用者情報」とは、ユーザーの識別に係る情報、通信サービス上の行動履歴、その他ユーザーまたはユーザーの端末に関連して生成または蓄積された情報であって、本ポリシーに基づき当社が収集するものを意味するものとします。本サービスにおいて当社が収集する利用者情報は、その収集方法に応じて、以下のようなものとなります。
+                <ol class="c-count-list c-count-list:sub-sec">
+                  <li class="c-count-list__item">
+                    <span class="u-txt-bold u-db">ユーザーからご提供いただく情報</span>
+                    本サービスを利用するために、または本サービスの利用を通じてユーザーからご提供いただく情報は以下のとおりです。
+                    <ul class="c-disc-list">
+                      <li>氏名、生年月日、性別、職業等プロフィールに関する情報</li>
+                      <li>メールアドレス、電話番号、住所等連絡先に関する情報</li>
+                      <li>クレジットカード情報、銀行口座情報、電子マネー情報等決済手段に関する情報</li>
+                      <li>ユーザーの肖像を含む静止画情報</li>
+                      <li>入力フォームその他当社が定める方法を通じてユーザーが入力または送信する情報</li>
+                    </ul>
+                  </li>
+                  <li class="c-count-list__item">
+                    <span class="u-txt-bold u-db">
+                      ユーザーが本サービスの利用において、他のサービスと連携を許可することにより、当該他のサービスからご提供いただく情報
+                    </span>
+                    ユーザーが、本サービスを利用するにあたり、ソーシャルネットワーキングサービス等の他のサービスとの連携を許可した場合には、その許可の際にご同意いただいた内容に基づき、以下の情報を当該外部サービスから収集します。
+                    <ul class="c-disc-list">
+                      <li>当該外部サービスでユーザーが利用するID</li>
+                      <li>その他当該外部サービスのプライバシー設定によりユーザーが連携先に開示を認めた情報</li>
+                    </ul>
+                  </li>
+                  <li class="c-count-list__item">
+                    <span class="u-txt-bold u-db">ユーザーが本サービスを利用するにあたって、当社が収集する情報</span>
+                    当社は、本サービスへのアクセス状況やそのご利用方法に関する情報を収集することがあります。これには以下の情報が含まれます。
+                    <ul class="c-disc-list">
+                      <li>リファラ</li>
+                      <li>IPアドレス</li>
+                      <li>サーバーアクセスログに関する情報</li>
+                      <li>Cookie、ADID、IDFAその他の識別子</li>
+                    </ul>
+                  </li>
+                  <li class="c-count-list__item">
+                    <span class="u-txt-bold u-db">
+                      ユーザーが本サービスを利用するにあたって、当社がユーザーの個別同意に基づいて収集する情報
+                    </span>
+                    当社は、ユーザーが3-1に定める方法により個別に同意した場合、当社は以下の情報を利用中の端末から収集します。
+                    <ul class="c-disc-list">
+                      <li>位置情報</li>
+                    </ul>
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第2条（利用目的）</dt>
+              <dd class="u-mt-base u-mb-base">
+                本サービスのサービス提供にかかわる利用者情報の具体的な利用目的は以下のとおりです。
+                <ol class="c-count-list c-count-list:sub-sec">
+                  <li class="c-count-list__item">
+                    本サービスに関する登録の受付、本人確認、ユーザー認証、ユーザー設定の記録、利用料金の決済計算等本サービスの提供、維持、保護及び改善のため
+                  </li>
+                  <li class="c-count-list__item">ユーザーのトラフィック測定及び行動測定のため</li>
+                  <li class="c-count-list__item">広告の配信、表示及び効果測定のため</li>
+                  <li class="c-count-list__item">本サービスに関するご案内、お問い合わせ等への対応のため</li>
+                  <li class="c-count-list__item">
+                    本サービスに関する当社の規約、ポリシー等（以下「規約等」といいます。）に違反する行為に対する対応のため
+                  </li>
+                  <li class="c-count-list__item">本サービスに関する規約等の変更などを通知するため</li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第3条（通知・公表または同意取得の方法、利用中止要請の方法）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    以下の利用者情報については、その収集が行われる前にユーザーの同意を得るものとします。
+                    <ul class="c-disc-list">
+                      <li>位置情報</li>
+                    </ul>
+                  </li>
+                  <li class="c-count-list__item">
+                    ユーザーは、本サービスの所定の設定を行うことにより、利用者情報の全部または一部についてその収集又は利用の停止を求めることができ、この場合、当社は速やかに、当社の定めるところに従い、その利用を停止します。なお利用者情報の項目によっては、その収集または利用が本サービスの前提となるため、当社所定の方法により本サービスを退会した場合に限り、当社はその収集又は利用を停止します。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第4条（外部送信、第三者提供、情報収集モジュールの有無）</dt>
+              <dd class="u-mt-base u-mb-base">
+                本サービスには以下の情報収集モジュールが組み込まれています。これらの情報収集モジュールは、ユーザーの端末にCookieを保存し、これを利用して利用者情報を蓄積及び利用する場合があります。また、モジュール提供者（日本国外にある者を含みます。）へ利用者情報を提供する場合があります。提携先のプライバシーポリシー、オプトアウト、第三者提供の有無等については個別にご確認いただき、必要に応じて無効化してください。
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    Google Analytics
+                    <dl class="c-table u-mt-xs u-mb-m">
+                      <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">提携先</dt>
+                      <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">グーグル合同会社</dd>
+                      <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">
+                        利用目的
+                      </dt>
+                      <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">
+                        アクセス情報の解析、サービス、サイトの改善
+                      </dd>
+                      <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">
+                        プライバシーポリシーのURL
+                      </dt>
+                      <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">
+                        <a
+                          class="c-link u-txt-break"
+                          href="https://www.google.com/intl/ja/policies/privacy/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          https://www.google.com/intl/ja/policies/privacy/
+                        </a>
+                      </dd>
+                      <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">
+                        オプトアウト（無効化）URL
+                      </dt>
+                      <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">
+                        <a
+                          class="c-link u-txt-break"
+                          href="https://support.google.com/analytics/answer/181881?hl=ja"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          https://support.google.com/analytics/answer/181881?hl=ja
+                        </a>
+                      </dd>
+                    </dl>
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第5条（第三者提供）</dt>
+              <dd class="u-mt-base u-mb-base">
+                当社は、利用者情報のうち、個人情報については、あらかじめユーザーの同意を得ないで、第三者（日本国外にある者を含みます。）に提供しません。但し、次に掲げる必要があり第三者（日本国外にある者を含みます。）に提供する場合はこの限りではありません。
+                <ol class="c-count-list c-count-list:sub-sec">
+                  <li class="c-count-list__item">
+                    当社が利用目的の達成に必要な範囲内において個人情報の取扱いの全部または一部を委託する場合
+                  </li>
+                  <li class="c-count-list__item">合併その他の事由による事業の承継に伴って個人情報が提供される場合</li>
+                  <li class="c-count-list__item">
+                    第4項の定めに従って、提携先または情報収集モジュール提供者へ個人情報が提供される場合
+                  </li>
+                  <li class="c-count-list__item">
+                    国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、ユーザーの同意を得ることによって当該事務の遂行に支障を及ぼすおそれがある場合
+                  </li>
+                  <li class="c-count-list__item">
+                    その他、個人情報の保護に関する法律（以下「個人情報保護法」といいます。）その他の法令で認められる場合
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第6条（共同利用）</dt>
+              <dd class="u-mt-base u-mb-base">
+                当社は、以下のとおりユーザーの個人情報を共同利用します。
+                <dl class="c-table u-mt-s u-mb-m">
+                  <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">
+                    <span class="o-has-icon o-has-icon:gap-2xs">
+                      <span>(1)</span>
+                      <span>共同して利用される個人情報の項目</span>
+                    </span>
+                  </dt>
+                  <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">
+                    <ul class="c-disc-list">
+                      <li>氏名</li>
+                      <li>メールアドレス</li>
+                      <li>その他当社が定める入力フォームにユーザーが入力する情報</li>
+                    </ul>
+                  </dd>
+                  <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">
+                    <span class="o-has-icon o-has-icon:gap-2xs">
+                      <span>(2)</span>
+                      <span>共同して利用する者の範囲</span>
+                    </span>
+                  </dt>
+                  <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">
+                    当社と機密保持契約を結んだ個人または法人
+                  </dd>
+                  <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">
+                    <span class="o-has-icon o-has-icon:gap-2xs">
+                      <span>(3)</span>
+                      <span>共同して利用する者の利用目的</span>
+                    </span>
+                  </dt>
+                  <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">当該サービスにおける利用目的と同じ</dd>
+                  <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">
+                    <span class="o-has-icon o-has-icon:gap-2xs">
+                      <span>(4)</span>
+                      <span>個人情報の管理について責任を有する者の氏名または名称</span>
+                    </span>
+                  </dt>
+                  <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">サンプル 太郎</dd>
+                </dl>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第7条（個人情報の開示）</dt>
+              <dd class="u-mt-base u-mb-base">
+                当社は、ユーザーから、個人情報保護法の定めに基づき個人情報の開示を求められたときは、ユーザーご本人からのご請求であることを確認の上で、ユーザーに対し、遅滞なく開示を行います（当該個人情報が存在しないときにはその旨を通知いたします。）。但し、個人情報保護法その他の法令により、当社が開示の義務を負わない場合は、この限りではありません。なお、個人情報の開示につきましては、手数料（1件あたり1,000円）を頂戴しておりますので、あらかじめ御了承ください。
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第8条（個人情報の訂正及び利用停止等）</dt>
+              <dd class="u-mt-base u-mb-base">
+                <ol class="c-count-list c-count-list:sec">
+                  <li class="c-count-list__item">
+                    当社は、ユーザーから、(1)個人情報が真実でないという理由によって個人情報保護法の定めに基づきその内容の訂正を求められた場合、及び(2)あらかじめ公表された利用目的の範囲を超えて取扱われているという理由または偽りその他不正の手段により収集されたものであるという理由により、個人情報保護法の定めに基づきその利用の停止を求められた場合には、ユーザーご本人からのご請求であることを確認の上で遅滞なく必要な調査を行い、その結果に基づき、個人情報の内容の訂正または利用停止を行い、その旨をユーザーに通知します。なお、訂正または利用停止を行わない旨の決定をしたときは、ユーザーに対しその旨を通知いたします。
+                  </li>
+                  <li class="c-count-list__item">
+                    当社は、ユーザーから、ユーザーの個人情報について消去を求められた場合、当社が当該請求に応じる必要があると判断した場合は、ユーザーご本人からのご請求であることを確認の上で、個人情報の消去を行い、その旨をユーザーに通知します。
+                  </li>
+                  <li class="c-count-list__item">
+                    個人情報保護法その他の法令により、当社が訂正等または利用停止等の義務を負わない場合は、第8条1項および第8条2項の規定は適用されません。
+                  </li>
+                </ol>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第9条（お問い合わせ窓口）</dt>
+              <dd class="u-mt-base u-mb-base">
+                ご意見、ご質問、苦情のお申出その他利用者情報の取扱いに関するお問い合わせは、下記の窓口までお願いいたします。
+                <dl class="c-table u-mt-s u-mb-m">
+                  <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">名称</dt>
+                  <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">サンプル株式会社</dd>
+                  <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">
+                    個人情報取扱責任者
+                  </dt>
+                  <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">サンプル 太郎</dd>
+                  <dt class="o-box c-table__title u-flex-shrink-none u-pd-xs u-txt-medium u-bg-overlay">連絡先</dt>
+                  <dd class="o-box c-table__content u-flex-shrink-none u-pd-xs">
+                    <a
+                      class="c-link u-txt-break"
+                      href="mailto:info@examples.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      info@examples.com
+                    </a>
+                  </dd>
+                </dl>
+              </dd>
+              <dt class="u-txt-bold u-txt-m">第10条（プライバシーポリシーの変更手続）</dt>
+              <dd class="u-mt-base u-mb-base">
+                当社は、必要に応じて、本ポリシーを変更します。但し、法令上ユーザーの同意が必要となるような本ポリシーの変更を行う場合、変更後の本ポリシーは、当社所定の方法で変更に同意したユーザーに対してのみ適用されるものとします。なお、当社は、本ポリシーを変更する場合には、変更後の本ポリシーの施行時期及び内容を当社のウェブサイト上での表示その他の適切な方法により周知し、またはユーザーに通知します。
+              </dd>
+            </dl>
+            <p class="u-txt-right u-txt-s">【2022年xx月xx日 制定】</p>
+          </div>
+        </div>
+      </div>
+      <div class="u-pt-l u-pb-l">
+        <div class="o-container">
+          <div class="u-inner-wrap u-block-center">
+            <h1 class="c-heading u-mb-l u-txt-bold u-txt-center u-txt-en">お問い合わせ</h1>
+            <p class="u-mb-m">
+              サービスに関するご質問、ご要望などございましたら、下記のお問い合わせフォームから、お気軽にお寄せください。
+            </p>
+            <form action="#" method="#" aria-label="Contact form">
+              <dl class="c-table u-mb-m">
+                <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">
+                  <label class="c-has-require" for="name"> お名前 </label>
+                </dt>
+                <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                  <input
+                    class="o-box o-box:border c-input-txt c-input-txt:full"
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    placeholder="例）お名前"
+                  />
+                </dd>
+                <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">
+                  <label for="tel"> 電話番号 </label>
+                </dt>
+                <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                  <input
+                    class="o-box o-box:border c-input-txt c-input-txt:full"
+                    type="tel"
+                    name="tel"
+                    autocomplete="tel"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    inputmode="tel"
+                    placeholder="例）000-0000-0000"
+                  />
+                </dd>
+                <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">
+                  <label class="c-has-require" for="email"> メールアドレス </label>
+                </dt>
+                <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                  <input
+                    class="o-box o-box:border c-input-txt c-input-txt:full"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    inputmode="email"
+                    placeholder="例）info@examples.com"
+                  />
+                </dd>
+                <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">
+                  <label for="gender"> 性別 </label>
+                </dt>
+                <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                  <div class="o-cluster u-gap-base">
+                    <label class="o-has-icon o-has-icon:choice">
+                      <input type="radio" name="gender" class="c-input-choice c-input-choice:radio" />
+                      男
+                    </label>
+                    <label class="o-has-icon o-has-icon:choice">
+                      <input type="radio" name="gender" class="c-input-choice c-input-choice:radio" />
+                      女
+                    </label>
+                    <label class="o-has-icon o-has-icon:choice">
+                      <input type="radio" name="gender" class="c-input-choice c-input-choice:radio" />
+                      無回答
+                    </label>
+                  </div>
+                </dd>
+                <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">
+                  <label for="return-type"> 連絡方法 </label>
+                </dt>
+                <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                  <div class="o-cluster u-gap-base">
+                    <label class="o-has-icon o-has-icon:choice">
+                      <input type="checkbox" name="return-type[]" class="c-input-choice c-input-choice:check" />
+                      メール
+                    </label>
+                    <label class="o-has-icon o-has-icon:choice">
+                      <input type="checkbox" name="return-type[]" class="c-input-choice c-input-choice:check" />
+                      電話
+                    </label>
+                  </div>
+                </dd>
+                <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">
+                  <label for="postal-code"> 郵便番号 </label>
+                </dt>
+                <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                  <input
+                    class="o-box o-box:border c-input-txt c-input-txt:zip"
+                    type="text"
+                    name="postal-code"
+                    maxlength="8"
+                    autocomplete="postal-code"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    placeholder="例）000-0000"
+                  />
+                </dd>
+                <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">
+                  <label for="address-level1"> 住所 </label>
+                </dt>
+                <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                  <span class="c-input-select u-mb-s">
+                    <select
+                      class="o-box o-box:border c-input-select__inner"
+                      name="address-level1"
+                      autocomplete="address-level1"
+                    >
+                      <option value="都道府県">都道府県</option>
+                      <option value="北海道">北海道</option>
+                      <option value="青森県">青森県</option>
+                      <option value="岩手県">岩手県</option>
+                      <option value="宮城県">宮城県</option>
+                      <option value="秋田県">秋田県</option>
+                      <option value="山形県">山形県</option>
+                      <option value="福島県">福島県</option>
+                      <option value="茨城県">茨城県</option>
+                      <option value="栃木県">栃木県</option>
+                      <option value="群馬県">群馬県</option>
+                      <option value="埼玉県">埼玉県</option>
+                      <option value="千葉県">千葉県</option>
+                      <option value="東京都">東京都</option>
+                      <option value="神奈川県">神奈川県</option>
+                      <option value="新潟県">新潟県</option>
+                      <option value="富山県">富山県</option>
+                      <option value="石川県">石川県</option>
+                      <option value="福井県">福井県</option>
+                      <option value="山梨県">山梨県</option>
+                      <option value="長野県">長野県</option>
+                      <option value="岐阜県">岐阜県</option>
+                      <option value="静岡県">静岡県</option>
+                      <option value="愛知県">愛知県</option>
+                      <option value="三重県">三重県</option>
+                      <option value="滋賀県">滋賀県</option>
+                      <option value="京都府">京都府</option>
+                      <option value="大阪府">大阪府</option>
+                      <option value="兵庫県">兵庫県</option>
+                      <option value="奈良県">奈良県</option>
+                      <option value="和歌山県">和歌山県</option>
+                      <option value="鳥取県">鳥取県</option>
+                      <option value="島根県">島根県</option>
+                      <option value="岡山県">岡山県</option>
+                      <option value="広島県">広島県</option>
+                      <option value="山口県">山口県</option>
+                      <option value="徳島県">徳島県</option>
+                      <option value="香川県">香川県</option>
+                      <option value="愛媛県">愛媛県</option>
+                      <option value="高知県">高知県</option>
+                      <option value="福岡県">福岡県</option>
+                      <option value="佐賀県">佐賀県</option>
+                      <option value="長崎県">長崎県</option>
+                      <option value="熊本県">熊本県</option>
+                      <option value="大分県">大分県</option>
+                      <option value="宮崎県">宮崎県</option>
+                      <option value="鹿児島県">鹿児島県</option>
+                      <option value="沖縄県">沖縄県</option>
+                    </select>
+                  </span>
+                  <input
+                    class="o-box o-box:border c-input-txt c-input-txt:pref u-mb-s"
+                    type="text"
+                    name="address-level1"
+                    autocomplete="address-level1"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    placeholder="例）都道府県"
+                  />
+                  <input
+                    class="o-box o-box:border c-input-txt c-input-txt:full u-mb-s"
+                    type="text"
+                    name="address-level2"
+                    autocomplete="address-level2"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    placeholder="例）市区町村"
+                  />
+                  <input
+                    class="o-box o-box:border c-input-txt c-input-txt:full"
+                    type="text"
+                    name="address-line1"
+                    autocomplete="address-line1"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    placeholder="例）番地 マンション名など"
+                  />
+                </dd>
+                <dt class="o-box c-table__title u-flex-shrink-none u-pd-base u-txt-medium u-bg-overlay">
+                  <label class="c-has-require" for="message"> お問い合わせ内容 </label>
+                </dt>
+                <dd class="o-box c-table__content u-flex-shrink-none u-pd-base">
+                  <textarea
+                    class="o-box o-box:border c-input-txt c-input-txt:full"
+                    name="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="お問い合わせ内容"
+                  ></textarea>
+                </dd>
+              </dl>
+              <label class="o-grid o-grid:accept u-flex-align-center u-gap-2xs u-mt-base u-mb-base">
+                <input
+                  class="c-input-choice c-input-choice:check"
+                  type="checkbox"
+                  name="acceptance"
+                  value="1"
+                  aria-invalid="false"
+                />
+                <a class="c-link u-txt-break" target="_blank" rel="noopener" href="#">プライバシーポリシー</a>に同意する
+              </label>
+              <button class="c-btn u-mb-m" type="submit">送信</button>
+              <button class="c-btn u-mb-m" type="submit" disabled>送信</button>
+            </form>
+            <ul class="o-stack u-txt-s u-txt-dimmed u-mb-m">
+              <li class="c-notice-item">調査等のため、返信にお時間を頂くことがございます。予めご了承ください。</li>
+              <li class="c-notice-item">
+                万が一、一週間経っても返信がない場合は大変お手数ですが、
+                <a class="c-link u-txt-break" href="mailto:info@examples.com" target="_blank" rel="noopener">
+                  info@examples.com</a
+                >
+                までご連絡ください。
+              </li>
+            </ul>
+            <form class="c-input-search u-mb-m" method="get" action="#" role="search">
+              <input
+                class="o-box o-box:border c-input-txt c-input-txt:search"
+                name="s"
+                type="text"
+                placeholder="キーワードを入力してください"
+              />
+              <button class="c-btn c-btn:search" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                  <path
+                    d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+            <form class="c-stretch-search" method="get" action="#" role="search">
+              <input
+                class="o-box o-box:border c-input-txt c-input-txt:stretch"
+                name="s"
+                type="text"
+                placeholder="キーワードを入力してください"
+              />
+              <label for="s" class="c-search-label">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                  <path
+                    d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="c-footer">あああ</footer>
+    <footer class="o-container o-container:footer u-bg-overlay u-txt-dimmed">
+      <ul class="o-cluster c-footer-nav u-flex-center u-gap-xs">
+        <li class="c-footer-nav__item u-flex-shrink-none">
+          <a class="u-db u-pd-s u-txt-medium u-txt-s u-txt-left" href="#">会社情報</a>
+        </li>
+        <li class="c-footer-nav__item u-flex-shrink-none">
+          <a class="u-db u-pd-s u-txt-medium u-txt-s u-txt-left" href="#">利用規約</a>
+        </li>
+        <li class="c-footer-nav__item u-flex-shrink-none">
+          <a class="u-db u-pd-s u-txt-medium u-txt-s u-txt-left" href="#">プライバシーポリシー</a>
+        </li>
+        <li class="c-footer-nav__item u-flex-shrink-none">
+          <a class="u-db u-pd-s u-txt-medium u-txt-s u-txt-left" href="#">お問い合わせ</a>
+        </li>
+      </ul>
+      <a href="#" class="c-logo c-logo:footer u-dt u-block-center u-pd-s">
+        <svg width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <style>
+            @media (prefers-color-scheme: dark) {
+              path:nth-of-type(2) {
+                fill: #ff5a5a;
+              }
+            }
+          </style>
+          <path
+            d="M19.193 1.768c-1.924.781-3.828 1.563-5.664 2.463A33.245 33.245 0 0 0 8.3 7.337a17.223 17.223 0 0 0-4.178 4.275 12.85 12.85 0 0 0-1.354 2.686 13.582 13.582 0 0 0-.602 2.216c-.048.254-.087.509-.126.766a10.066 10.066 0 0 1-.007-1.566c.037-.526.114-1.049.23-1.563.237-1.04.62-2.04 1.14-2.972a13.362 13.362 0 0 1 1.883-2.58c.361-.393.745-.762 1.141-1.117s.812-.685 1.236-1.002a24.434 24.434 0 0 1 5.525-3.014 30.714 30.714 0 0 1 6.004-1.698Z"
+            fill="#2C6C60"
+          />
+          <path
+            d="M4.481 15.982c-4.596 5.566 7.02 15.982 8.958 8.476 1.21-5.088-4.358-12.84-9.44-8.236"
+            fill="#C82E2E"
+          />
+          <path
+            d="M1.8 23.17c-.043.317-.103.629-.161.94l-.18.926a41.212 41.212 0 0 0-.322 1.831 10.78 10.78 0 0 0-.13 1.784c.005.274.04.548.102.815.03.12.069.236.119.349l.038.08.02.037.028.048a1.796 1.796 0 0 0 .631.63c.226.137.47.24.726.304a6.325 6.325 0 0 0 1.726.178 16.97 16.97 0 0 0 1.831-.144c.309-.038.619-.08.93-.127.31-.047.623-.095.94-.138a9.842 9.842 0 0 1-.858.423c-.294.128-.59.242-.892.352-.61.216-1.241.373-1.882.469a8.815 8.815 0 0 1-.493.054 6.087 6.087 0 0 1-.502.019 4.992 4.992 0 0 1-1.029-.1 3.538 3.538 0 0 1-1.025-.382A2.823 2.823 0 0 1 .4 30.506l-.034-.06-.036-.067a2.851 2.851 0 0 1-.24-.68 4.43 4.43 0 0 1-.087-1.054c.012-.334.047-.668.106-.998.055-.322.13-.645.214-.954.353-1.228.849-2.41 1.477-3.523Zm6.553-11.175c.248-.243.518-.462.806-.656.29-.194.596-.366.912-.515a8.793 8.793 0 0 1 1.998-.654 12.382 12.382 0 0 1 4.212-.087c.702.102 1.395.259 2.072.47.683.21 1.345.48 1.98.807.644.33 1.25.729 1.808 1.189a7.792 7.792 0 0 1 1.483 1.627c.206.31.386.639.537.98a5.81 5.81 0 0 1 .422 3.307 7.24 7.24 0 0 1-.685 2.088 9.157 9.157 0 0 1-.54.938c-.198.298-.41.587-.637.864a12.835 12.835 0 0 1-3.188 2.755 12.49 12.49 0 0 1-1.864.946c-.323.13-.651.242-.983.345-.332.097-.67.174-1.01.231a13.07 13.07 0 0 0 3.563-1.954 13.78 13.78 0 0 0 2.822-2.835 10.012 10.012 0 0 0 .991-1.692 6.625 6.625 0 0 0 .534-1.832 5.017 5.017 0 0 0-.39-2.732 5.528 5.528 0 0 0-.456-.822 6.846 6.846 0 0 0-1.274-1.415 9.552 9.552 0 0 0-1.605-1.103 13.664 13.664 0 0 0-7.708-1.567c-.67.068-1.33.206-1.97.412a7.138 7.138 0 0 0-.94.381c-.31.15-.608.326-.89.524Zm6.54 17.789a1.37 1.37 0 0 1-.283-.061 1.73 1.73 0 0 1-.262-.107c-.087-.138-.174-.275-.248-.417a8.28 8.28 0 0 1-.384-.852c-.112-.283-.216-.56-.334-.817a3.689 3.689 0 0 0-.191-.366c.005-.08.008-.161.01-.252v-.275a1.254 1.254 0 0 1 .28.074c.09.034.177.075.26.123.083.14.158.283.225.43.131.287.238.573.347.847.103.269.22.532.353.787.063.123.136.24.217.352l.005.255.005.28Zm-3.146-1.697c.04.012.075.027.112.04l.101.04a2.6 2.6 0 0 1 .19.08c.028.09.07.175.109.263.08.174.167.349.255.527.088.178.179.36.264.546.043.094.085.189.124.286a1.878 1.878 0 0 1-.19.403c-.154-.053-.276-.108-.404-.161a7.38 7.38 0 0 0-.114-.262c-.08-.174-.167-.35-.256-.527-.089-.177-.18-.36-.264-.547-.045-.093-.081-.19-.127-.285.022-.069.05-.135.08-.2l.051-.1c.026-.036.044-.068.069-.103Zm8.788-26.811C21.745-.418 24.163-.66 23.92 2a3.337 3.337 0 0 1-3.87-.967"
+            fill="#2C6C60"
+          />
+        </svg>
+      </a>
+      <p class="u-txt-en u-txt-s u-txt-center u-pb-base">©︎ examples.com</p>
+    </footer>
   </body>
 </html>

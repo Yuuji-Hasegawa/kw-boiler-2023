@@ -5,8 +5,18 @@
   display: block;
   aspect-ratio: 16/9;
 
+  /*
+  line-height: 1;
+  */
+
   &\:square {
     aspect-ratio: 1/1;
+  }
+
+  &\:gray-filter {
+    > * {
+      filter: grayscale(100%);
+    }
   }
 
   > * {

@@ -10,6 +10,23 @@ module.exports = {
 		"scss/selector-no-union-class-name": null,
 		"selector-class-pattern": null,
 		"selector-id-pattern": null,
+    "media-feature-name-no-unknown": [
+      true,
+      {
+        "ignoreMediaFeatureNames": [
+          "min-device-pixel-ratio"
+        ]
+      }
+    ],
+    "unit-no-unknown": [
+      true,
+      {
+        "ignoreUnits": [
+          "/xs/",
+          "/xl/"
+        ]
+      }
+    ],
 	},
 	ignoreFiles: ["**/node_modules/**", "./dist/**"],
 };

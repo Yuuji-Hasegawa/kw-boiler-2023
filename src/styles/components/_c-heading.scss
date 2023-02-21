@@ -1,0 +1,26 @@
+@use "../settings" as setting;
+@use "../tools" as tool;
+
+.c-heading,
+.c-trim-heading {
+  line-height: setting.lineheight(heading);
+}
+
+.c-heading {
+  font-size: clamp(setting.fontsize(l), calc((100vw - 650px) * 999), setting.fontsize(xl));
+
+  &\:min {
+    font-size: clamp(setting.fontsize(m), calc((100vw - 650px) * 999), setting.fontsize(l));
+  }
+}
+
+.c-trim-heading {
+  max-height: calc(setting.fontsize(m) * setting.lineheight(heading) * 2);
+
+  /*
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  */
+  overflow: hidden;
+}

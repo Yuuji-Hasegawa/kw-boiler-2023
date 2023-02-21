@@ -5,12 +5,14 @@
     @content;
   }
 }
+
 @mixin min-screen($breakpoint) {
   // 引数に設定された画面幅以下のスタイルを指定するメディアクエリ
   @media screen and (min-width: $breakpoint) {
     @content;
   }
 }
+
 // 印刷の設定
 @mixin print() {
   @media print {
@@ -26,7 +28,7 @@
 }
 
 @mixin retina() {
-  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     @content;

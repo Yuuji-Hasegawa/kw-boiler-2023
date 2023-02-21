@@ -1,0 +1,14 @@
+@use "../settings" as setting;
+@use "../tools" as tool;
+
+.c-logo {
+  line-height: 1;
+
+  &\:header {
+    font-size: 40px;
+  }
+
+  &\:footer {
+    font-size: 70px;
+  }
+}

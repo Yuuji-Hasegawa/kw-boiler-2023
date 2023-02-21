@@ -1,2 +1,2 @@
-import { dummy } from './dummy.mjs';
-dummy();
+import { menu } from "./menu.js";
+menu();

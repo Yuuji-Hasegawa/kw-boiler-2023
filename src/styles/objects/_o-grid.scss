@@ -1,0 +1,14 @@
+@use "../settings" as setting;
+
+.o-grid {
+  display: grid;
+
+  &\:pagination {
+    grid-template: auto / repeat(auto-fit, minmax(min((calc(375px - 100vw) * 999), 2em), auto));
+  }
+
+  &\:accept {
+    grid-template-columns: max-content max-content auto;
+    cursor: pointer;
+  }
+}

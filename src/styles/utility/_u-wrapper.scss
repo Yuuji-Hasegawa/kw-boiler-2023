@@ -1,0 +1,9 @@
+@use "../settings" as setting;
+
+.u-wrapper {
+  max-width: setting.itemsize(wrapper);
+}
+
+.u-inner-wrap {
+  max-width: setting.itemsize(content);
+}

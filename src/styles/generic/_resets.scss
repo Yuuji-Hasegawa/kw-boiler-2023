@@ -39,7 +39,6 @@ body {
   color: var(--c-txt);
   background-color: var(--c-bg);
   text-size-adjust: 100%;
-  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -50,7 +49,7 @@ ul {
 }
 
 p:not(:last-of-type) {
-  margin-block-end: setting.spaces(m);
+  margin-bottom: setting.spaces(m);
 }
 
 b,

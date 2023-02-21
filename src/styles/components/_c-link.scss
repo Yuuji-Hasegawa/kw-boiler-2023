@@ -1,0 +1,12 @@
+@use "../settings" as setting;
+@use "../tools" as tool;
+
+.c-link {
+  color: setting.brandcolor(base);
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}

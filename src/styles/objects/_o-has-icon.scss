@@ -1,0 +1,36 @@
+@use "../settings" as setting;
+
+.o-has-icon {
+  display: inline-flex;
+
+  &\:baseline {
+    align-items: baseline;
+  }
+
+  &\:center,
+  &\:choice {
+    align-items: center;
+  }
+
+  &\:gap-3xs {
+    gap: setting.spaces(3xs);
+  }
+
+  &\:gap-2xs {
+    gap: setting.spaces(2xs);
+  }
+
+  &\:gap-xs,
+  &\:choice {
+    gap: setting.spaces(xs);
+  }
+
+  &\:gap-s {
+    gap: setting.spaces(s);
+  }
+
+  &\:choice {
+    font-weight: setting.fontweight(m);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,10 @@
+@use "../settings" as setting;
+
+.o-cluster {
+  display: flex;
+  flex-wrap: wrap;
+
+  /*
+    gap: setting.spaces(base);
+  */
+}

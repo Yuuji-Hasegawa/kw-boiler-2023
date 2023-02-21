@@ -1,5 +1,6 @@
-@use 'sass:math';
-@use 'sass:map';
+@use "sass:math";
+@use "sass:map";
+
 $base: 24px; /* 16 * 1.5rem */
 $ratio: 1.618;
 
@@ -12,8 +13,8 @@ $spaces: (
   2xs: math.div(math.div(math.div($base, $ratio), $ratio), $ratio),
   xs: math.div(math.div($base, $ratio), $ratio),
   s: math.div($base, $ratio),
-  base: 1rem,
-  m: $base,
+  base: 16px,
+  /* 16 * 1rem */ m: $base,
   l: $base * $ratio,
   xl: $base * $ratio * $ratio,
   2xl: $base * $ratio * $ratio * $ratio,

@@ -1,0 +1,121 @@
+@use "../settings" as setting;
+@use "../tools" as tool;
+
+.c-btn {
+  display: table;
+  padding: setting.spaces(xs) setting.spaces(s);
+  font-size: setting.fontsize(m);
+  font-weight: setting.fontweight(b);
+  color: setting.lightcolor(bg);
+  cursor: pointer;
+  background: setting.brandcolor(base);
+  border: solid 1px transparent;
+
+  &:hover,
+  &:focus {
+    color: setting.brandcolor(light);
+    background: setting.brandcolor(dark);
+  }
+
+  &:focus {
+    outline: 1px solid setting.brandcolor(light);
+    outline-offset: 1px;
+  }
+
+  /*
+  &\:link,
+  &\:button {
+
+  }
+
+  &\:button {
+
+  }
+  */
+
+  &:disabled {
+    color: var(--c-dimmed);
+    pointer-events: none;
+    background: var(--c-overlay);
+  }
+
+  &\:search {
+    position: absolute;
+    right: 0;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+      background: transparent;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  /*
+  &\:pager {
+  }
+  */
+}
+
+.c-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 13px 10px;
+  cursor: pointer;
+
+  &:focus {
+    outline: 1px solid setting.brandcolor(light);
+  }
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: var(--c-txt);
+    transition: all ease-out 0.3s;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      content: "";
+      background-color: var(--c-txt);
+      transition: all ease-out 0.3s;
+    }
+
+    &::before {
+      top: -11px;
+    }
+
+    &::after {
+      bottom: -11px;
+    }
+
+    .c-menu-btn\:is-open & {
+      background: transparent;
+
+      &::before {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        bottom: 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  @include tool.min-screen(768px) {
+    display: none;
+  }
+}
