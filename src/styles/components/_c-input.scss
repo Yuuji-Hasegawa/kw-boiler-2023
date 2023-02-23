@@ -19,7 +19,8 @@
   }
 
   &\:full,
-  &\:search {
+  &\:search,
+  &\:share {
     width: 100%;
   }
 
@@ -171,13 +172,26 @@
   }
 }
 
+.c-input-copy,
 .c-input-search {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .c-stretch-search {
   position: relative;
+}
+
+.c-copy-message {
+  position: absolute;
+  top: calc(100% + setting.spaces(s));
+  left: 50%;
+  z-index: 999;
+  display: table;
+  padding: setting.spaces(xs);
+  font-weight: setting.fontweight(m);
+  color: #fff;
+  text-align: center;
+  background: setting.brandcolor(base);
+  transform: translateX(-50%);
 }

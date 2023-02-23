@@ -34,4 +34,12 @@
   &-shrink-none {
     flex-shrink: 0;
   }
+
+  &-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &-column-reverse {
+    flex-direction: column-reverse;
+  }
 }

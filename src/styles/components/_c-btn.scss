@@ -42,6 +42,7 @@
   &\:search {
     position: absolute;
     right: 0;
+    color: inherit;
     background: transparent;
 
     &:hover,
@@ -52,6 +53,17 @@
 
     &:focus {
       outline: none;
+    }
+  }
+
+  &\:ghost {
+    background: transparent;
+    border: solid 1px;
+
+    &:hover,
+    &:focus {
+      color: setting.lightcolor(dimmed);
+      background: setting.lightcolor(bg);
     }
   }
 
@@ -118,4 +130,84 @@
   @include tool.min-screen(768px) {
     display: none;
   }
+}
+
+.c-sidebar-btn {
+  position: fixed;
+  right: clamp(setting.spaces(2xs), calc(3.5vw - setting.spaces(base)), setting.spaces(base));
+  bottom: setting.spaces(base);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 32px;
+  color: setting.lightcolor(bg);
+  cursor: pointer;
+  background: rgb(setting.brandcolor(dark) 0.7);
+  border-radius: 50%;
+  box-shadow: 0 0 2px setting.brandcolor(dark);
+  transition: all setting.animes(duration) setting.animes(timing);
+
+  &:focus,
+  &:hover {
+    color: setting.lightcolor(dimmed);
+    background: rgb(setting.lightcolor(bg) 0.7);
+  }
+
+  &\:is-open {
+    right: calc(clamp(setting.spaces(2xs), calc(3.5vw - setting.spaces(base)), setting.spaces(base)) + 240px);
+  }
+}
+
+.c-sidebar {
+  position: fixed;
+  top: 0;
+  right: -240px;
+  z-index: 1000;
+  width: 100%;
+  max-width: 240px;
+  height: 100vh;
+  pointer-events: none;
+  background: setting.brandcolor(dark);
+  box-shadow: 0 0 2px setting.lightcolor(overlay);
+  transition: right setting.animes(duration) setting.animes(timing);
+
+  &\:is-open {
+    right: 0;
+    pointer-events: auto;
+    transition: right setting.animes(duration) setting.animes(timing);
+  }
+}
+
+.c-sidebar-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  visibility: hidden;
+  background: setting.brandcolor(light);
+  opacity: 0;
+  transition: opacity setting.animes(duration) setting.animes(timing);
+
+  .c-sidebar\:is-open + & {
+    display: block;
+    pointer-events: auto;
+    cursor: pointer;
+    visibility: visible;
+    opacity: setting.animes(opacity);
+    transition: opacity setting.animes(duration) setting.animes(timing);
+  }
+}
+
+body.is-fixed {
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
 }

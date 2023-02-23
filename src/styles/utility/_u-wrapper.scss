@@ -7,3 +7,8 @@
 .u-inner-wrap {
   max-width: setting.itemsize(content);
 }
+
+.u-clip-hero {
+  max-height: 450px;
+  overflow: hidden;
+}

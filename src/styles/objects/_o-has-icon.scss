@@ -33,4 +33,16 @@
     font-weight: setting.fontweight(m);
     cursor: pointer;
   }
+
+  &\:redume {
+    position: relative;
+    display: flex;
+    padding: setting.spaces(base);
+    cursor: pointer;
+
+    .c-redume[open] & {
+      margin-bottom: setting.spaces(base);
+      border-bottom: solid 1px var(--c-separator);
+    }
+  }
 }

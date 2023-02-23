@@ -42,3 +42,9 @@
     overflow-wrap: break-word;
   }
 }
+
+.u-lineheight {
+  &-min {
+    line-height: 1;
+  }
+}

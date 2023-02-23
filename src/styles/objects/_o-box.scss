@@ -7,4 +7,9 @@
   &\:border {
     border: 1px solid var(--c-border);
   }
+
+  &\:catLink {
+    display: table;
+    max-width: max-content;
+  }
 }

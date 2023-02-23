@@ -73,11 +73,19 @@
     </nav>
     <main>
       <script type="module" src="scripts/main.mjs"></script>
-      <picture class="o-frame">
-        <source type="image/avif" srcset="public/img/thumb.avif" />
-        <source type="image/webp" srcset="public/img/thumb.webp" />
-        <img src="public/img/hero.png" loading="lazy" decoding="async" alt="" width="100%" height="100%" />
-      </picture>
+      <div class="o-cover u-clip-hero">
+        <div class="o-cover__overlay">
+          <h1 class="c-hero-heading u-txt-bold u-txt-en">
+            Hello,World
+            <span class="c-hero-heading__lead-copy">lead copys</span>
+          </h1>
+        </div>
+        <picture class="o-frame">
+          <source type="image/avif" srcset="public/img/thumb.avif" />
+          <source type="image/webp" srcset="public/img/thumb.webp" />
+          <img src="public/img/hero.png" loading="lazy" decoding="async" alt="" width="100%" height="100%" />
+        </picture>
+      </div>
       <div class="u-pt-l u-pb-l">
         <div class="o-container">
           <h2 class="c-heading u-mb-l u-txt-bold u-txt-center u-txt-en">Information</h2>
@@ -1144,6 +1152,1012 @@
               </label>
             </form>
           </div>
+          <div class="u-pt-l u-pb-l">
+            <div class="o-container">
+              <div class="u-inner-wrap u-block-center">
+                <header class="o-cluster u-gap-base u-mb-m">
+                  <time
+                    datetime="2022-00-00"
+                    class="o-has-icon o-has-icon:gap-3xs u-flex-center u-lineheight-min u-txt-dimmed u-txt-s"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                      <path
+                        d="M96 32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32zM448 464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192H448V464z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <span class="u-txt-en"> 2022.00.00 </span>
+                  </time>
+                  <time
+                    datetime="2022-00-00"
+                    class="o-has-icon o-has-icon:gap-3xs u-flex-center u-lineheight-min u-txt-dimmed u-txt-s"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                      <path
+                        d="M468.9 32.11c13.87 0 27.18 10.77 27.18 27.04v145.9c0 10.59-8.584 19.17-19.17 19.17h-145.7c-16.28 0-27.06-13.32-27.06-27.2c0-6.634 2.461-13.4 7.96-18.9l45.12-45.14c-28.22-23.14-63.85-36.64-101.3-36.64c-88.09 0-159.8 71.69-159.8 159.8S167.8 415.9 255.9 415.9c73.14 0 89.44-38.31 115.1-38.31c18.48 0 31.97 15.04 31.97 31.96c0 35.04-81.59 70.41-147 70.41c-123.4 0-223.9-100.5-223.9-223.9S132.6 32.44 256 32.44c54.6 0 106.2 20.39 146.4 55.26l47.6-47.63C455.5 34.57 462.3 32.11 468.9 32.11z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <span class="u-txt-en"> 2022.00.00 </span>
+                  </time>
+                </header>
+                <article class="c-entry u-mb-m">
+                  <p>本文</p>
+                  <ul>
+                    <li>リスト</li>
+                    <li>リスト</li>
+                    <li>リスト</li>
+                  </ul>
+                  <ol>
+                    <li>リスト</li>
+                    <li>リスト</li>
+                    <li>リスト</li>
+                  </ol>
+                  <p>
+                    <a href="#">リンクテキスト</a>
+                  </p>
+                  <h2>見出し</h2>
+                  <h3>小見出し</h3>
+                </article>
+                <div class="c-input-copy u-mb-m">
+                  <input
+                    id="shareURL"
+                    class="o-box o-box:border c-input-txt c-input-txt:share"
+                    type="text"
+                    value="https://examples.com/news/00"
+                    readonly="true"
+                  />
+                  <button id="shareBtn" class="c-btn u-flex-shrink-none">コピー</button>
+                </div>
+                <footer class="o-stack o-stack:s">
+                  <h3 class="c-border-heading u-txt-bold u-txt-m">この記事のお問い合わせ先</h3>
+                  <p>
+                    <b>お問い合わせ窓口</b>
+                    <br />
+                    〒000-0000 大阪市北区xx町xx-xx <br />
+                    Email:
+                    <a class="c-link" href="mailto:info@examples.com" target="_blank" rel="noopener">
+                      info@examples.com
+                    </a>
+                    <br />
+                    <a class="c-link" href="#"> お問い合わせフォームはこちらから </a>
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="u-pt-l u-pb-l">
+            <div class="o-container">
+              <div class="u-inner-wrap u-block-center">
+                <header class="o-grid o-grid:author u-gap-2xs u-mb-m">
+                  <a href="#authorInfo">
+                    <picture class="o-frame o-frame:square">
+                      <source srcset="public/img/profile.avif" type="image/avif" />
+                      <source srcset="public/img/profile.webp" type="image/webp" />
+                      <img
+                        src="public/img/profile.png"
+                        loading="lazy"
+                        decoding="async"
+                        width="100%"
+                        height="100%"
+                        alt=""
+                      />
+                    </picture>
+                  </a>
+                  <div class="o-stack o-stack:xxs">
+                    <a class="u-txt-brand u-txt-s u-txt-medium" href="#authorInfo">サンプル 太郎</a>
+                    <div class="o-cluster u-gap-xs">
+                      <time
+                        datetime="2022-00-00"
+                        class="o-has-icon o-has-icon:gap-3xs u-flex-center u-lineheight-min u-txt-dimmed u-txt-s"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                          <path
+                            d="M96 32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32zM448 464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192H448V464z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                        <span class="u-txt-en"> 2022.00.00 </span>
+                      </time>
+                      <time
+                        datetime="2022-00-00"
+                        class="o-has-icon o-has-icon:gap-3xs u-flex-center u-lineheight-min u-txt-dimmed u-txt-s"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                          <path
+                            d="M468.9 32.11c13.87 0 27.18 10.77 27.18 27.04v145.9c0 10.59-8.584 19.17-19.17 19.17h-145.7c-16.28 0-27.06-13.32-27.06-27.2c0-6.634 2.461-13.4 7.96-18.9l45.12-45.14c-28.22-23.14-63.85-36.64-101.3-36.64c-88.09 0-159.8 71.69-159.8 159.8S167.8 415.9 255.9 415.9c73.14 0 89.44-38.31 115.1-38.31c18.48 0 31.97 15.04 31.97 31.96c0 35.04-81.59 70.41-147 70.41c-123.4 0-223.9-100.5-223.9-223.9S132.6 32.44 256 32.44c54.6 0 106.2 20.39 146.4 55.26l47.6-47.63C455.5 34.57 462.3 32.11 468.9 32.11z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                        <span class="u-txt-en"> 2022.00.00 </span>
+                      </time>
+                    </div>
+                  </div>
+                </header>
+                <article class="c-entry u-mb-m">
+                  <details class="o-box o-box:border c-redume u-mb-base">
+                    <summary class="o-has-icon o-has-icon:redume u-gap-3xs u-bg-overlay">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                          d="M88 48C101.3 48 112 58.75 112 72V120C112 133.3 101.3 144 88 144H40C26.75 144 16 133.3 16 120V72C16 58.75 26.75 48 40 48H88zM480 64C497.7 64 512 78.33 512 96C512 113.7 497.7 128 480 128H192C174.3 128 160 113.7 160 96C160 78.33 174.3 64 192 64H480zM480 224C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H192C174.3 288 160 273.7 160 256C160 238.3 174.3 224 192 224H480zM480 384C497.7 384 512 398.3 512 416C512 433.7 497.7 448 480 448H192C174.3 448 160 433.7 160 416C160 398.3 174.3 384 192 384H480zM16 232C16 218.7 26.75 208 40 208H88C101.3 208 112 218.7 112 232V280C112 293.3 101.3 304 88 304H40C26.75 304 16 293.3 16 280V232zM88 368C101.3 368 112 378.7 112 392V440C112 453.3 101.3 464 88 464H40C26.75 464 16 453.3 16 440V392C16 378.7 26.75 368 40 368H88z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <span class="u-txt-bold u-lineheight-min">目次</span>
+                      <span class="c-redume-marker">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                          <path
+                            d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </span>
+                    </summary>
+                    <ul id="redumeBody" class="u-pb-base">
+                      <li><a href="#" class="u-db">見出し1</a></li>
+                      <li><a href="#" class="u-db">見出し2</a></li>
+                      <li><a href="#" class="u-db">見出し3</a></li>
+                    </ul>
+                  </details>
+                </article>
+                <div class="o-stack o-stack:xxs u-mb-m">
+                  <a class="o-box o-box:border o-box:catLink u-ph-xs u-pv-2xs u-bg-overlay u-txt-medium" href="#"
+                    >未分類</a
+                  >
+                  <div class="o-cluster u-gap-base">
+                    <a class="o-has-icon o-has-icon:center o-has-icon:gap-3xs u-txt-brand u-txt-dimmed" href="#"
+                      >#<span>タグ</span></a
+                    >
+                    <a class="o-has-icon o-has-icon:center o-has-icon:gap-3xs u-txt-brand u-txt-dimmed" href="#"
+                      >#<span>タグ</span></a
+                    >
+                    <a class="o-has-icon o-has-icon:center o-has-icon:gap-3xs u-txt-brand u-txt-dimmed" href="#"
+                      >#<span>タグ</span></a
+                    >
+                  </div>
+                </div>
+                <div class="c-input-copy u-mb-m">
+                  <input
+                    id="shareURL"
+                    class="o-box o-box:border c-input-txt c-input-txt:share"
+                    type="text"
+                    value="https://examples.com/00"
+                    readonly="true"
+                  />
+                  <button id="shareBtn" class="c-btn u-flex-shrink-none">コピー</button>
+                </div>
+                <footer id="authorInfo" class="o-box o-box:border u-bg-overlay u-txt-dimmed u-pd-base">
+                  <div class="o-switcher u-gap-s">
+                    <div class="c-author-pict u-block-center">
+                      <picture class="o-frame o-frame:square">
+                        <source srcset="public/img/profile.avif" type="image/avif" />
+                        <source srcset="public/img/profile.webp" type="image/webp" />
+                        <img
+                          src="public/img/profile.png"
+                          loading="lazy"
+                          decoding="async"
+                          width="100%"
+                          height="100%"
+                          alt=""
+                        />
+                      </picture>
+                    </div>
+                    <dl class="o-stack o-stack:xs o-switcher__detail">
+                      <dt class="c-author-name u-block-center u-txt-m u-txt-bold">サンプル 太郎</dt>
+                      <dd>
+                        サンプル太郎の自己紹介。サンプルを表示しています
+                        <div class="o-cluster u-gap-s u-mt-xs">
+                          <a href="#" class="u-txt-brand u-lineheight-min u-txt-l" target="_blank" rel="noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                              <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                          </a>
+                          <a href="#" class="u-txt-brand u-lineheight-min u-txt-l" target="_blank" rel="noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                              <path
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                          </a>
+                          <a href="#" class="u-txt-brand u-lineheight-min u-txt-l" target="_blank" rel="noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                              <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                          </a>
+                          <a href="#" class="u-txt-brand u-lineheight-min u-txt-l" target="_blank" rel="noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                              <path
+                                d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="u-pt-l u-pb-l u-bg-overlay">
+            <div class="o-container">
+              <div class="u-inner-wrap u-block-center">
+                <ul class="o-stack o-stack:m u-mb-m">
+                  <li>
+                    <details class="c-faq o-box o-box:border u-bg-base u-pd-base">
+                      <summary class="c-faq__q u-txt-bold u-txt-m u-pr-base">質問文1</summary>
+                      <span class="c-faq__a u-txt-medium">回答文サンプル1</span>
+                    </details>
+                  </li>
+                  <li>
+                    <details class="c-faq o-box o-box:border u-bg-base u-pd-base">
+                      <summary class="c-faq__q u-txt-bold u-txt-m u-pr-base">質問文1</summary>
+                      <span class="c-faq__a u-txt-medium">回答文サンプル1</span>
+                    </details>
+                  </li>
+                  <li>
+                    <details class="c-faq o-box o-box:border u-bg-base u-pd-base">
+                      <summary class="c-faq__q u-txt-bold u-txt-m u-pr-base">質問文1</summary>
+                      <span class="c-faq__a u-txt-medium">回答文サンプル1</span>
+                    </details>
+                  </li>
+                  <li>
+                    <details class="c-faq o-box o-box:border u-bg-base u-pd-base">
+                      <summary class="c-faq__q u-txt-bold u-txt-m u-pr-base">質問文1</summary>
+                      <span class="c-faq__a u-txt-medium">回答文サンプル1</span>
+                    </details>
+                  </li>
+                  <li>
+                    <details class="c-faq o-box o-box:border u-bg-base u-pd-base">
+                      <summary class="c-faq__q u-txt-bold u-txt-m u-pr-base">質問文1</summary>
+                      <span class="c-faq__a u-txt-medium">回答文サンプル1</span>
+                    </details>
+                  </li>
+                </ul>
+                <a href="#" class="c-btn c-btn:ghost u-block-center">
+                  <span class="o-has-icon o-has-icon:center o-has-icon:gap-3xs">
+                    <span>全てのFAQ</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                      <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
+                      <path
+                        d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="u-pt-l u-pb-l">
+            <div class="o-container u-block-center u-wrapper">
+              <ul class="o-switcher o-switcher:gap-none u-mb-m">
+                <li class="o-switcher__half-quart u-flex-shrink-none o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-switcher__half-quart o-stack o-stack:s u-flex-shrink-none">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-switcher__half-quart o-stack o-stack:s u-flex-shrink-none">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-switcher__half-quart o-stack o-stack:s u-flex-shrink-none">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+              </ul>
+              <ul class="o-switcher o-switcher:gap-base u-mb-m">
+                <li class="o-switcher__half-quart u-flex-shrink-none o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-switcher__half-quart o-stack o-stack:s u-flex-shrink-none">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-switcher__half-quart o-stack o-stack:s u-flex-shrink-none">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-switcher__half-quart o-stack o-stack:s u-flex-shrink-none">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+              </ul>
+              <ul class="o-switcher o-switcher:gap-none u-mb-m">
+                <li class="o-switcher__one-third u-flex-shrink-none o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-switcher__one-third o-stack o-stack:s u-flex-shrink-none">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-switcher__one-third o-stack o-stack:s u-flex-shrink-none">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+              </ul>
+              <ul class="o-switcher o-switcher:gap-base u-mb-m">
+                <li class="o-switcher__one-third u-flex-shrink-none o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-switcher__one-third o-stack o-stack:s u-flex-shrink-none">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-switcher__one-third o-stack o-stack:s u-flex-shrink-none">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+              </ul>
+              <ul class="o-grid o-grid:third u-gap-base u-mb-m">
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+              </ul>
+              <ul class="o-grid o-grid:quart u-gap-base u-mb-m">
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+              </ul>
+              <ul class="o-grid o-grid:fifth u-gap-base u-mb-m">
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+                <li class="o-stack o-stack:s">
+                  <a href="#">
+                    <picture class="o-frame">
+                      <source type="image/avif" srcset="public/img/thumb.avif" />
+                      <source type="image/webp" srcset="public/img/thumb.webp" />
+                      <img
+                        src="public/img/thumb.png"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        width="100%"
+                        height="100%"
+                      />
+                    </picture>
+                  </a>
+                  <h3 class="c-trim-heading u-txt-m u-txt-bold">
+                    <a class="u-db" href="#">Hello world!</a>
+                  </h3>
+                  <footer class="o-stack o-stack:xs u-txt-s u-txt-dimmed">
+                    <a href="#" class="u-txt-medium">未分類</a>
+                    <time class="u-txt-en" datetime="2022-00-00">約nヶ月前</time>
+                  </footer>
+                </li>
+              </ul>
+              <div class="o-switcher o-switcher:gap-base u-mb-m">
+                <div class="o-switcher__media-pict-area u-flex-shrink-none">
+                  <picture class="o-frame">
+                    <source type="image/avif" srcset="public/img/thumb.avif" />
+                    <source type="image/webp" srcset="public/img/thumb.webp" />
+                    <img src="public/img/thumb.jpg" loading="lazy" decoding="async" alt="" width="100%" height="100%" />
+                  </picture>
+                </div>
+                <dl class="o-switcher__media-txt-area u-flex-shrink-none">
+                  <dt>小見出しコピー</dt>
+                  <dd>説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文</dd>
+                </dl>
+              </div>
+              <div class="o-switcher o-switcher:gap-base u-flex-row-reverse u-mb-m">
+                <div class="o-switcher__media-pict-area u-flex-shrink-none">
+                  <picture class="o-frame">
+                    <source type="image/avif" srcset="public/img/thumb.avif" />
+                    <source type="image/webp" srcset="public/img/thumb.webp" />
+                    <img src="public/img/thumb.jpg" loading="lazy" decoding="async" alt="" width="100%" height="100%" />
+                  </picture>
+                </div>
+                <dl class="o-switcher__media-txt-area u-flex-shrink-none">
+                  <dt>小見出しコピー</dt>
+                  <dd>説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文説明文</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -1187,5 +2201,51 @@
       </a>
       <p class="u-txt-en u-txt-s u-txt-center u-pb-base">©︎ examples.com</p>
     </footer>
+    <button type="button" class="c-sidebar-btn" aria-label="menu open" aria-controls="sidebar" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path
+          d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </button>
+    <div id="sidebar" class="c-sidebar" tabindex="-1" aria-hidden="true">
+      <div class="o-cover o-cover:sidebar">
+        <a href="#" class="c-logo c-logo:header u-pv-2xs">
+          <svg width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <style>
+              @media (prefers-color-scheme: dark) {
+                path:nth-of-type(2) {
+                  fill: #ff5a5a;
+                }
+              }
+            </style>
+            <path
+              d="M19.193 1.768c-1.924.781-3.828 1.563-5.664 2.463A33.245 33.245 0 0 0 8.3 7.337a17.223 17.223 0 0 0-4.178 4.275 12.85 12.85 0 0 0-1.354 2.686 13.582 13.582 0 0 0-.602 2.216c-.048.254-.087.509-.126.766a10.066 10.066 0 0 1-.007-1.566c.037-.526.114-1.049.23-1.563.237-1.04.62-2.04 1.14-2.972a13.362 13.362 0 0 1 1.883-2.58c.361-.393.745-.762 1.141-1.117s.812-.685 1.236-1.002a24.434 24.434 0 0 1 5.525-3.014 30.714 30.714 0 0 1 6.004-1.698Z"
+              fill="#2C6C60"
+            />
+            <path
+              d="M4.481 15.982c-4.596 5.566 7.02 15.982 8.958 8.476 1.21-5.088-4.358-12.84-9.44-8.236"
+              fill="#C82E2E"
+            />
+            <path
+              d="M1.8 23.17c-.043.317-.103.629-.161.94l-.18.926a41.212 41.212 0 0 0-.322 1.831 10.78 10.78 0 0 0-.13 1.784c.005.274.04.548.102.815.03.12.069.236.119.349l.038.08.02.037.028.048a1.796 1.796 0 0 0 .631.63c.226.137.47.24.726.304a6.325 6.325 0 0 0 1.726.178 16.97 16.97 0 0 0 1.831-.144c.309-.038.619-.08.93-.127.31-.047.623-.095.94-.138a9.842 9.842 0 0 1-.858.423c-.294.128-.59.242-.892.352-.61.216-1.241.373-1.882.469a8.815 8.815 0 0 1-.493.054 6.087 6.087 0 0 1-.502.019 4.992 4.992 0 0 1-1.029-.1 3.538 3.538 0 0 1-1.025-.382A2.823 2.823 0 0 1 .4 30.506l-.034-.06-.036-.067a2.851 2.851 0 0 1-.24-.68 4.43 4.43 0 0 1-.087-1.054c.012-.334.047-.668.106-.998.055-.322.13-.645.214-.954.353-1.228.849-2.41 1.477-3.523Zm6.553-11.175c.248-.243.518-.462.806-.656.29-.194.596-.366.912-.515a8.793 8.793 0 0 1 1.998-.654 12.382 12.382 0 0 1 4.212-.087c.702.102 1.395.259 2.072.47.683.21 1.345.48 1.98.807.644.33 1.25.729 1.808 1.189a7.792 7.792 0 0 1 1.483 1.627c.206.31.386.639.537.98a5.81 5.81 0 0 1 .422 3.307 7.24 7.24 0 0 1-.685 2.088 9.157 9.157 0 0 1-.54.938c-.198.298-.41.587-.637.864a12.835 12.835 0 0 1-3.188 2.755 12.49 12.49 0 0 1-1.864.946c-.323.13-.651.242-.983.345-.332.097-.67.174-1.01.231a13.07 13.07 0 0 0 3.563-1.954 13.78 13.78 0 0 0 2.822-2.835 10.012 10.012 0 0 0 .991-1.692 6.625 6.625 0 0 0 .534-1.832 5.017 5.017 0 0 0-.39-2.732 5.528 5.528 0 0 0-.456-.822 6.846 6.846 0 0 0-1.274-1.415 9.552 9.552 0 0 0-1.605-1.103 13.664 13.664 0 0 0-7.708-1.567c-.67.068-1.33.206-1.97.412a7.138 7.138 0 0 0-.94.381c-.31.15-.608.326-.89.524Zm6.54 17.789a1.37 1.37 0 0 1-.283-.061 1.73 1.73 0 0 1-.262-.107c-.087-.138-.174-.275-.248-.417a8.28 8.28 0 0 1-.384-.852c-.112-.283-.216-.56-.334-.817a3.689 3.689 0 0 0-.191-.366c.005-.08.008-.161.01-.252v-.275a1.254 1.254 0 0 1 .28.074c.09.034.177.075.26.123.083.14.158.283.225.43.131.287.238.573.347.847.103.269.22.532.353.787.063.123.136.24.217.352l.005.255.005.28Zm-3.146-1.697c.04.012.075.027.112.04l.101.04a2.6 2.6 0 0 1 .19.08c.028.09.07.175.109.263.08.174.167.349.255.527.088.178.179.36.264.546.043.094.085.189.124.286a1.878 1.878 0 0 1-.19.403c-.154-.053-.276-.108-.404-.161a7.38 7.38 0 0 0-.114-.262c-.08-.174-.167-.35-.256-.527-.089-.177-.18-.36-.264-.547-.045-.093-.081-.19-.127-.285.022-.069.05-.135.08-.2l.051-.1c.026-.036.044-.068.069-.103Zm8.788-26.811C21.745-.418 24.163-.66 23.92 2a3.337 3.337 0 0 1-3.87-.967"
+              fill="#2C6C60"
+            />
+          </svg>
+        </a>
+        <nav id="sidebar-nav" class="c-sidebar-nav-wrapper">
+          <ul class="o-stack">
+            <li><a href="#" class="u-db u-txt-bold u-pv-base u-txt-white">トップ</a></li>
+            <li><a href="#" class="u-db u-txt-bold u-pv-base u-txt-white">会社情報</a></li>
+            <li><a href="#" class="u-db u-txt-bold u-pv-base u-txt-white">ブログ</a></li>
+            <li><a href="#" class="u-db u-txt-bold u-pv-base u-txt-white">お知らせ</a></li>
+            <li><a href="#" class="u-db u-txt-bold u-pv-base u-txt-white">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="c-sidebar-bg"></div>
   </body>
 </html>

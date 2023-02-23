@@ -11,4 +11,21 @@
     grid-template-columns: max-content max-content auto;
     cursor: pointer;
   }
+
+  &\:author {
+    grid-template-columns: 50px 1fr;
+    width: fit-content;
+  }
+
+  &\:third {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* wrapper サイズで3つ */
+  }
+
+  &\:quart {
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr)); /* wrapper サイズで4つ */
+  }
+
+  &\:fifth {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); /* wrapper サイズで5つ */
+  }
 }

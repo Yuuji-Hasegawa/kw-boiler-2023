@@ -1,6 +1,10 @@
 @use "../settings" as setting;
 
 .u-bg {
+  &-base {
+    background: var(--c-bg);
+  }
+
   &-overlay {
     background: var(--c-overlay);
   }
@@ -13,5 +17,9 @@
 
   &-brand {
     color: setting.brandcolor(base);
+  }
+
+  &-white {
+    color: setting.lightcolor(bg);
   }
 }
