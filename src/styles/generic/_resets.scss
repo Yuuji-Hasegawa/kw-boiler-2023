@@ -86,3 +86,11 @@ svg {
   height: 1em;
   vertical-align: -0.125em;
 }
+
+details > summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
